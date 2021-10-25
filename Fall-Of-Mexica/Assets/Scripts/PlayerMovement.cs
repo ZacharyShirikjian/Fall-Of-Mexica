@@ -16,17 +16,24 @@ public class PlayerMovement : MonoBehaviour
 
     //REFERENCES//
     private SpriteRenderer sprite; //reference to the player's sprite 
+    private Rigidbody2D rb2d; //reference to the player's rigidbody 
+
+    //OTEHR VARIABLES//
+    public bool canInteract = false; //If the player can interact with something, this gets set to true
+    public bool talking = false; //If the player is talking with NPC, this gets set to true 
 
     // Start is called before the first frame update
     void Start()
     {
-        sprite = this.gameObject.GetComponent<SpriteRenderer>();    
+        sprite = this.gameObject.GetComponent<SpriteRenderer>();
+        rb2d = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMove();
+        PlayerInteract();
     }
 
    /*
@@ -83,5 +90,17 @@ public class PlayerMovement : MonoBehaviour
             sprite.flipX = lastDir;
             sprite.flipY = lastVertDir;
       }
+    }
+
+    void PlayerInteract()
+    {
+        //For when player is talking to NPCs 
+        if(canInteract == true && Input.GetKeyDown(KeyCode.X))
+        {
+            Debug.Log("Player is talking to an NPC");
+            rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+            talking = true; 
+            //Freeze player movement when they are interacting with something 
+        }
     }
 }
