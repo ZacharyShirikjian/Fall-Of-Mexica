@@ -20,8 +20,8 @@ public class GameManager : MonoBehaviour
         dialogueText = DialogueBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         dialogueText.SetText("");
         interactPrompt = GameObject.Find("InteractPromptText");
-        interactPrompt.SetActive(false);
         interactPromptText = interactPrompt.GetComponent<TextMeshProUGUI>();
+        interactPrompt.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,13 +33,15 @@ public class GameManager : MonoBehaviour
     //Pop up the prompt for the player to press an input to interact with something (NPC, object, etc) 
     public void InteractPrompt(string prompt)
     {
-        if(player.GetComponent<PlayerMovement>().canInteract == true)
+        //interactPrompt.SetActive(true);
+        //interactPromptText.SetText(prompt);
+        if(player.GetComponentInChildren<PlayerInteract>().canInteract == true)
         {
             interactPrompt.SetActive(true);
             interactPromptText.SetText(prompt);
         }
 
-        else if (player.GetComponent<PlayerMovement>().canInteract == false)
+        else if (player.GetComponentInChildren<PlayerInteract>().canInteract == false)
         {
             interactPrompt.SetActive(false);
             interactPromptText.SetText("");

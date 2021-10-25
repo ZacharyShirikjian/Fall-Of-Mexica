@@ -30,33 +30,33 @@ public class NPC : MonoBehaviour
         //    //Talk();
         //}
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        /*
-         * If the player enters the NPC's trigger zone, 
-         * Prompt the player to press X to talk to the NPC. 
-         */
-        if(other.gameObject.tag == "Player")
-        {
-            player.GetComponent<PlayerMovement>().canInteract = true;
-            gm.InteractPrompt("Press X to Talk");
-            Debug.Log("Player has entered NPC's interactable range");
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    /*
+    //     * If the player enters the NPC's trigger zone, 
+    //     * Prompt the player to press X to talk to the NPC. 
+    //     */
+    //    if(other.gameObject.tag == "Player")
+    //    {
+    //        player.GetComponent<PlayerInteract>().canInteract = true;
+    //        gm.InteractPrompt("Press X to Talk");
+    //        Debug.Log("Player has entered NPC's interactable range");
+    //    }
+    //}
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-       /*
-        * If the player leaves the NPC's trigger zone, 
-        * The button prompt goes away. 
-        */
-        if (other.tag == "Player")
-        {
-            player.GetComponent<PlayerMovement>().canInteract = false;
-            gm.InteractPrompt("");
-            Debug.Log("Player has left NPC's interactable range");
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //   /*
+    //    * If the player leaves the NPC's trigger zone, 
+    //    * The button prompt goes away. 
+    //    */
+    //    if (other.tag == "Player")
+    //    {
+    //        player.GetComponent<PlayerInteract>().canInteract = false;
+    //        gm.InteractPrompt("");
+    //        Debug.Log("Player has left NPC's interactable range");
+    //    }
+    //}
 
     public void Talk()
     {
@@ -66,7 +66,7 @@ public class NPC : MonoBehaviour
             gm.dialogueText.SetText(dialogue[i]);
             if (i == (dialogue.Count- 1))
             {
-                player.GetComponent<PlayerMovement>().talking = false;
+                player.GetComponentInChildren<PlayerInteract>().talking = false;
                 gm.DialogueBox.SetActive(false);
             }
         }
