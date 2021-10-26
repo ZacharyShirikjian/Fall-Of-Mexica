@@ -11,9 +11,9 @@ public class Sentence
     //Expand the size of the TextArea for the Textboxes so it's easier to add the dialogue for the NPCs
     [TextArea(1, 3)]
     public string line;
-    public bool correctAnswer;
+    public bool option1;
     public bool question;
-    public bool answer;
+    public bool option2;
     public int yes;
     public int no;
     public string yesText;
@@ -28,15 +28,13 @@ public class NPCDialogue : MonoBehaviour
 
     public GameObject DialogueBox;
 
-    public GameObject npcNameBox;
-
     //Name of the NPC who is being talked to (can be changed in Inspector)
     public string npcName;
 
     //VARIABLES//
     public TextMeshProUGUI textDisplay;
     public Sentence[] sentences;
-    private int index;
+    public int index;
     public float typingSpeed;
     public GameObject continueButton;
     public GameObject option1Button;
@@ -46,7 +44,6 @@ public class NPCDialogue : MonoBehaviour
     void Start()
     {
         npcNameText.text = npcName;
-        npcNameBox.SetActive(true);
         DialogueBox.SetActive(true);
         StartCoroutine(Type());
     }
@@ -72,13 +69,13 @@ public class NPCDialogue : MonoBehaviour
                 continueButton.SetActive(false);
                 if (sentences[index].yesText != "")
                 {
-                    option1Button.GetComponent<TextMeshProUGUI>().text = sentences[index].yesText;
-                    option2Button.GetComponent<TextMeshProUGUI>().text = sentences[index].noText;
+                    option1Button.GetComponentInChildren<TextMeshProUGUI>().text = sentences[index].yesText;
+                    option2Button.GetComponentInChildren<TextMeshProUGUI>().text = sentences[index].noText;
                 }
                 else
                 {
-                    option1Button.GetComponent<TextMeshProUGUI>().text = "Yes";
-                    option2Button.GetComponent<TextMeshProUGUI>().text = "No";
+                    option1Button.GetComponentInChildren<TextMeshProUGUI>().text = "Yes";
+                    option2Button.GetComponentInChildren<TextMeshProUGUI>().text = "No";
                 }
             }
             else
@@ -122,21 +119,21 @@ public class NPCDialogue : MonoBehaviour
                 Debug.Log(index);
             }
 
-            //If there is an answer and the player clicks a button,
-            if (sentences[index].answer == true)
-            {
-                //If the player selects the correct option, 
-                if (sentences[index].correctAnswer == true)
-                {
+            ////If there is an answer and the player clicks a button,
+            //if (sentences[index].answer == true)
+            //{
+            //    //If the player selects the correct option, 
+            //    if (sentences[index].correctAnswer == true)
+            //    {
 
-                }
+            //    }
 
-                //If the player selects the incorrect option, 
-                else if (sentences[index].correctAnswer == false)
-                {
+            //    //If the player selects the incorrect option, 
+            //    else if (sentences[index].correctAnswer == false)
+            //    {
 
-                }
-            }
+            //    }
+            //}
             textDisplay.text = "";
             StartCoroutine(Type());
         }
@@ -145,6 +142,7 @@ public class NPCDialogue : MonoBehaviour
         else
         {
             textDisplay.text = "";
+            DialogueBox.SetActive(false);
         }
     }
 }

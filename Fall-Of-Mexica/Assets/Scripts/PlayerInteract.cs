@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //This script was referenced from the one made by Scripting is Fun,
 //in their "Unity 2D Game Basics - Talking to NPCs video on YouTube:
@@ -9,6 +10,9 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     //REFERENCES//
+    public NPC_Bridge object1Button;
+    public NPC_Bridge2 object2Button;
+
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
 
@@ -31,14 +35,14 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         //For when player is talking to NPCs 
-        if (Input.GetKeyDown(KeyCode.X) && currentNPC)
+        if (Input.GetKeyDown(KeyCode.X) && currentNPC && canInteract == true)
         {
             Debug.Log("Player is talking to an NPC");
             rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
             //npcScript.Talk();
+            canInteract = false;
             currentNPC.GetComponent<NPCDialogue>().enabled = true; 
             talking = true;
-            //Freeze player movement when they are interacting with something 
         }
     }
 
@@ -50,6 +54,8 @@ public class PlayerInteract : MonoBehaviour
             currentNPC = other.gameObject;
             npcScript = currentNPC.GetComponent<NPC>();
             canInteract = true;
+            object1Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
+            object2Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             Debug.Log("Player has entered NPC's interactable range");
             gm.InteractPrompt("Press X to Talk");
         }
