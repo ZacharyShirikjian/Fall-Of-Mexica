@@ -10,15 +10,19 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI interactPromptText;
     private GameObject player;
     public GameObject DialogueBox;
+    public GameObject npcNameBox;
+    public TextMeshProUGUI npcNameText;
     public TextMeshProUGUI dialogueText; 
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        npcNameBox.SetActive(false);
         DialogueBox.SetActive(false);
         dialogueText = DialogueBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         dialogueText.SetText("");
+        npcNameText.SetText("");
         interactPrompt = GameObject.Find("InteractPromptText");
         interactPromptText = interactPrompt.GetComponent<TextMeshProUGUI>();
         interactPrompt.SetActive(false);

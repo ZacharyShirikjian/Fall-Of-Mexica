@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NPC : MonoBehaviour
 {
@@ -9,10 +10,7 @@ public class NPC : MonoBehaviour
     private GameManager gm;
     private GameObject player;
 
-    //VARIABLES//
-    public List<string> dialogue = new List<string>();
-
-    // Start is called before the first frame update
+    // Start  is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player");
@@ -21,6 +19,7 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
+       
         //if (player.GetComponent<PlayerMovement>().talking == true)
         //{
         //    Talk();
@@ -58,18 +57,18 @@ public class NPC : MonoBehaviour
     //    }
     //}
 
-    public void Talk()
-    {
-        gm.DialogueBox.SetActive(true);
-        for(int i = 0; i < dialogue.Count; i++)
-        {
-            gm.dialogueText.SetText(dialogue[i]);
-            if (i == (dialogue.Count- 1))
-            {
-                player.GetComponentInChildren<PlayerInteract>().talking = false;
-                gm.DialogueBox.SetActive(false);
-            }
-        }
+    //public void Talk()
+    //{
+    //    gm.DialogueBox.SetActive(true);
+    //    for(int i = 0; i < sentences.Count; i++)
+    //    {
+    //        gm.dialogueText.SetText(dialogue[i]);
+    //        if (i == (dialogue.Count- 1))
+    //        {
+    //            player.GetComponentInChildren<PlayerInteract>().talking = false;
+    //            gm.DialogueBox.SetActive(false);
+    //        }
+    //    }
        
-    }
+    //}
 }

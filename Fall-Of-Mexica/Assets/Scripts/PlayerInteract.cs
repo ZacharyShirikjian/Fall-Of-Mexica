@@ -35,7 +35,8 @@ public class PlayerInteract : MonoBehaviour
         {
             Debug.Log("Player is talking to an NPC");
             rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-            npcScript.Talk();
+            //npcScript.Talk();
+            currentNPC.GetComponent<NPCDialogue>().enabled = true; 
             talking = true;
             //Freeze player movement when they are interacting with something 
         }
