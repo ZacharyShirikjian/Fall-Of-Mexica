@@ -12,6 +12,7 @@ public class PlayerInteract : MonoBehaviour
     //REFERENCES//
     public NPC_Bridge object1Button;
     public NPC_Bridge2 object2Button;
+    public NPC_Bridge_Continue continueButton;
 
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
@@ -19,9 +20,13 @@ public class PlayerInteract : MonoBehaviour
     public GameObject currentNPC = null;
     public NPC npcScript = null;
 
+    public GameObject currentPickUp = null;
+
+    public GameObject pickUpIcon; 
 
     //OTEHR VARIABLES//
     public bool canInteract; //If the player can interact with something, this gets set to true
+    public bool holdingObject = false; //If the player is holding a pickup, set this to true 
     public bool talking = false; //If the player is talking with NPC, this gets set to true 
 
     void Start()
@@ -44,33 +49,64 @@ public class PlayerInteract : MonoBehaviour
             currentNPC.GetComponent<NPCDialogue>().enabled = true; 
             talking = true;
         }
+
+        //For when the player is picking up a pickup,
+        //Diplay the Pickup the player has on screen 
+        else if(Input.GetKeyDown(KeyCode.X) && currentPickUp && canInteract == true)
+        {
+            canInteract = false;
+            holdingObject = true;
+            Destroy(currentPickUp.gameObject);
+            pickUpIcon.SetActive(true); //tweak this later? 
+        }
+
     }
 
-    //When NPC enters Player's trigger zone, set the current NPC GameObject to be the one which is in the player's trigger zone
+    //For when something enters the player's interact radius 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("NPC"))
+        //When NPC enters Player's trigger zone, set the current NPC GameObject to be the one which is in the player's trigger zone
+        if (other.CompareTag("NPC"))
         {
             currentNPC = other.gameObject;
             npcScript = currentNPC.GetComponent<NPC>();
             canInteract = true;
             object1Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             object2Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
+            continueButton.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             Debug.Log("Player has entered NPC's interactable range");
             gm.InteractPrompt("Press X to Talk");
+        }
+
+        //If the player's interact radius is near a pickup object,
+        //Prompt the player to pickup the pickup object 
+        else if(other.CompareTag("Pickup"))
+        {
+            currentPickUp = other.gameObject;
+            canInteract = true;
+            Debug.Log("Player has entered Pickup's interactable range");
+            gm.InteractPrompt("Press X to pickup");
         }
 
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject == currentNPC)
+        if(other.gameObject.tag == "Pickup" || other.gameObject.tag == "NPC")
         {
-            currentNPC = null;
-            npcScript = null;
             canInteract = false;
             Debug.Log("Player has left NPC's interactable range");
             gm.InteractPrompt("");
+            if (other.gameObject == currentNPC)
+            {
+                currentNPC = null;
+                npcScript = null;
+            }
+
+            else if(other.gameObject ==  currentPickUp)
+            {
+                currentPickUp = null;
+            }
         }
     }
 }

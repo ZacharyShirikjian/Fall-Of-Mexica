@@ -31,6 +31,10 @@ public class NPCDialogue : MonoBehaviour
     //Name of the NPC who is being talked to (can be changed in Inspector)
     public string npcName;
 
+
+    //Reference to the player 
+    private GameObject player;
+
     //VARIABLES//
     public TextMeshProUGUI textDisplay;
     public Sentence[] sentences;
@@ -45,6 +49,7 @@ public class NPCDialogue : MonoBehaviour
     {
         npcNameText.text = npcName;
         DialogueBox.SetActive(true);
+        player = GameObject.Find("Player");
         StartCoroutine(Type());
     }
 
@@ -143,6 +148,8 @@ public class NPCDialogue : MonoBehaviour
         {
             textDisplay.text = "";
             DialogueBox.SetActive(false);
+            player.GetComponentInChildren<PlayerInteract>().canInteract = true;
+            player.GetComponentInChildren<PlayerInteract>().talking = false;
         }
     }
 }
