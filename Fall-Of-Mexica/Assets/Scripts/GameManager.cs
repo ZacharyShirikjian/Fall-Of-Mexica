@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI interactPromptText;
     public GameObject PauseMenu;
     private GameObject player;
+
+    private GameObject currentObjectiveUI;
+    private TextMeshProUGUI currentObjectiveText;
+
     public GameObject option1Button;
     public GameObject option2Button; 
     public GameObject DialogueBox;
@@ -37,18 +41,22 @@ public class GameManager : MonoBehaviour
         interactPrompt = GameObject.Find("InteractPromptText");
         interactPromptText = interactPrompt.GetComponent<TextMeshProUGUI>();
         interactPrompt.SetActive(false);
+        currentObjectiveUI = GameObject.Find("CurrentObjective");
+        currentObjectiveText = currentObjectiveUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        UpdateCurrentObjective("");
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if(player.GetComponentInChildren<PlayerInteract>().talking == true)
         {
             canOpenMap = false; 
         }
 
         //If player is pressing G, map appears
-        if (Input.GetKeyDown(KeyCode.G) && canOpenMap == true && player.GetComponent<PlayerInteract>().talking == false)
+        if (Input.GetKeyDown(KeyCode.G) && canOpenMap == true && player.GetComponentInChildren<PlayerInteract>().talking == false)
         {
             fullMap.SetActive(true);
             canOpenMap = false; 
@@ -73,8 +81,7 @@ public class GameManager : MonoBehaviour
             UnPauseGame(); 
         }
            
-    }
-    
+    } 
     void PauseGame()
     {
         paused = true;
@@ -106,11 +113,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //MIGHT DELETE THIS LATER AND COMBINE INTO 1 METHOD 
-    public void CloseInteractPrompt()
+    public void UpdateCurrentObjective(string currentObjective)
     {
-        interactPrompt.SetActive(false);
-        interactPromptText.SetText("");
+        if(currentObjective == "")
+        {
+            currentObjectiveText.SetText("Explore");
+        }
+
+        else
+        {
+            currentObjectiveText.SetText(currentObjective);
+
+        }
     }
+
+
 
 }

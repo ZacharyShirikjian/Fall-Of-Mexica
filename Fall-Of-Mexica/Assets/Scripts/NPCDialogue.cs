@@ -31,6 +31,8 @@ public class NPCDialogue : MonoBehaviour
     //Name of the NPC who is being talked to (can be changed in Inspector)
     public string npcName;
 
+    //Reference to GameManager
+    private GameManager gm;
 
     //Reference to the player 
     private GameObject player;
@@ -44,18 +46,34 @@ public class NPCDialogue : MonoBehaviour
     public GameObject option1Button;
     public GameObject option2Button;
 
+    //OPTIONAL, OBJECTIVE THAT NPC GIVES PLAYER
+    public string objective = ""; //optional 
+
     // Start is called before the first frame update
     void Start()
     {
         npcNameText.text = npcName;
-        DialogueBox.SetActive(true);
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //StartCoroutine(Type());
+    }
+
+    //When this script gets enabled (when the player talks to an NPC)
+    //Start the Typing Coroutine to begin the dialouge again
+
+    private void OnEnable()
+    {
         StartCoroutine(Type());
     }
 
     // Update is called once per frame
     void Update()
     {
+        //If the player is talking, enable the DialogueBox and begin the conversation 
+        if(index == 0 && player.GetComponentInChildren<PlayerInteract>().talking == true)
+        {
+            DialogueBox.SetActive(true);
+        }
         //If the player presses space, display all of the text for that particular sentence. 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -143,13 +161,23 @@ public class NPCDialogue : MonoBehaviour
             StartCoroutine(Type());
         }
 
-        //End the Conversation
+        //Reset the conversation so the player can talk to the NPC again once they have finished talking with the NPC.
         else
         {
             textDisplay.text = "";
-            DialogueBox.SetActive(false);
             player.GetComponentInChildren<PlayerInteract>().canInteract = true;
             player.GetComponentInChildren<PlayerInteract>().talking = false;
+            DialogueBox.SetActive(false);
+            //If the NPC has an objective to give to the player (assigned in inspector),
+            //update the current objective of the game (call the method that the GM has) 
+            if(objective != "")
+            {
+                gm.UpdateCurrentObjective(objective);
+            }
+            StopAllCoroutines();
+            index = 0;
+            player.GetComponent<PlayerMovement>().canMove = true;
+            this.enabled = false;
         }
     }
 }

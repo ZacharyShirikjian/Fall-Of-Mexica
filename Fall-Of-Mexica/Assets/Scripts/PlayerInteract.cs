@@ -17,6 +17,10 @@ public class PlayerInteract : MonoBehaviour
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
 
+
+    //Reference to the parent of the player 
+    private PlayerMovement PlayerMoveRef; 
+
     public GameObject currentNPC = null;
     public NPC npcScript = null;
 
@@ -34,6 +38,7 @@ public class PlayerInteract : MonoBehaviour
         //Reference player (parent gameobject)'s rigidbody
         rb2d = gameObject.transform.parent.GetComponent<Rigidbody2D>(); 
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        PlayerMoveRef = gameObject.transform.parent.GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -43,11 +48,10 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X) && currentNPC && canInteract == true)
         {
             Debug.Log("Player is talking to an NPC");
-            rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-            //npcScript.Talk();
             canInteract = false;
             currentNPC.GetComponent<NPCDialogue>().enabled = true; 
             talking = true;
+            PlayerMoveRef.canMove = false;
         }
 
         //For when the player is picking up a pickup,
@@ -57,6 +61,8 @@ public class PlayerInteract : MonoBehaviour
             canInteract = false;
             holdingObject = true;
             Destroy(currentPickUp.gameObject);
+            Debug.Log("Player has picked up maize");
+            gm.UpdateCurrentObjective("Bring the Maize to the Temple"); 
             pickUpIcon.SetActive(true); //tweak this later? 
         }
 

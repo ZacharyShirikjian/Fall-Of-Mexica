@@ -13,14 +13,11 @@ public class PlayerMovement : MonoBehaviour
     private float playerSpeed = 5f; //speed of the player 
     private bool lastDir; //the last horizontal direction the player was facing in, left = false, right = true
     private bool lastVertDir; //the last vertical direction the player was facing in, down = false, up = true
+    public bool canMove = true;
 
     //REFERENCES//
     private SpriteRenderer sprite; //reference to the player's sprite 
     //private Rigidbody2D rb2d; //reference to the player's rigidbody 
-
-    //OTEHR VARIABLES//
-   // public bool canInteract = false; //If the player can interact with something, this gets set to true
-   // public bool talking = false; //If the player is talking with NPC, this gets set to true 
 
     // Start is called before the first frame update
     void Start()
@@ -45,51 +42,56 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        //Move the player to the right 
-        transform.Translate(Vector3.right * Time.deltaTime * playerSpeed * horizontalInput);
+        if (canMove == true)
+        {
+            //Move the player to the right 
+            transform.Translate(Vector3.right * Time.deltaTime * playerSpeed * horizontalInput);
 
-        //Move the player upwards 
-        transform.Translate(Vector3.up * Time.deltaTime * playerSpeed * verticalInput);
+            //Move the player upwards 
+            transform.Translate(Vector3.up * Time.deltaTime * playerSpeed * verticalInput);
 
-       /*
+            /*
         * If the player is inputting left,
         * Keep the sprite facing left
         */
-        if(horizontalInput < 0)
-        {
-            sprite.flipX = false;
-            lastDir = false;
+            if (horizontalInput < 0)
+            {
+                sprite.flipX = false;
+                lastDir = false;
+            }
+
+            /*
+             * If the player is inputting right,
+             * Flip the sprite so it is facing right 
+             */
+            else if (horizontalInput > 0)
+            {
+                sprite.flipX = true;
+                lastDir = true;
+            }
+
+            /*
+             * If the player is inputting up,
+             * Keep the sprite facing left
+             */
+            else if (verticalInput > 0)
+            {
+                sprite.flipY = true;
+                lastVertDir = true;
+            }
+
+            /*
+             * In all other situations,
+             * Flip the sprite depending on the direction the player is inputting (accounts for diagonals). 
+             */
+            else
+            {
+                sprite.flipX = lastDir;
+                sprite.flipY = lastVertDir;
+            }
         }
 
-       /*
-        * If the player is inputting right,
-        * Flip the sprite so it is facing right 
-        */
-        else if (horizontalInput > 0)
-        {
-            sprite.flipX = true;
-            lastDir = true;
-        }
-
-       /*
-        * If the player is inputting up,
-        * Keep the sprite facing left
-        */
-        else if (verticalInput > 0)
-        {
-            sprite.flipY = true;
-            lastVertDir = true;
-        }
-
-      /*
-       * In all other situations,
-       * Flip the sprite depending on the direction the player is inputting (accounts for diagonals). 
-       */
-      else
-      {
-            sprite.flipX = lastDir;
-            sprite.flipY = lastVertDir;
-      }
+       
     }
 
     //void PlayerInteract()
