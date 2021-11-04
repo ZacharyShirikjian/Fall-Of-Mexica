@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public GameObject DialogueBox;
     public TextMeshProUGUI npcNameText;
     public TextMeshProUGUI dialogueText;
+
+    private GameObject mapPrompts; 
     public GameObject fullMap; //reference to the image of the full Tenochtitlan map 
 
     //VARIABLES//
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         PauseMenu.SetActive(false);
         player = GameObject.FindWithTag("Player");
+        mapPrompts = GameObject.Find("MapPrompts");
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
@@ -38,8 +41,8 @@ public class GameManager : MonoBehaviour
         dialogueText = DialogueBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         dialogueText.SetText("");
         npcNameText.SetText("");
-        interactPrompt = GameObject.Find("InteractPromptText");
-        interactPromptText = interactPrompt.GetComponent<TextMeshProUGUI>();
+        interactPrompt = GameObject.Find("InteractPrompt");
+        interactPromptText = interactPrompt.GetComponentInChildren<TextMeshProUGUI>();
         interactPrompt.SetActive(false);
         currentObjectiveUI = GameObject.Find("CurrentObjective");
         currentObjectiveText = currentObjectiveUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
@@ -52,23 +55,25 @@ public class GameManager : MonoBehaviour
 
         if(player.GetComponentInChildren<PlayerInteract>().talking == true)
         {
-            canOpenMap = false; 
+            canOpenMap = false;
+            mapPrompts.SetActive(false);
         }
 
-        //If player is pressing G, map appears
-        if (Input.GetKeyDown(KeyCode.G) && canOpenMap == true && player.GetComponentInChildren<PlayerInteract>().talking == false)
+        //If player is pressing F, map appears
+        if (Input.GetKeyDown(KeyCode.F) && canOpenMap == true && player.GetComponentInChildren<PlayerInteract>().talking == false)
         {
             fullMap.SetActive(true);
+            mapPrompts.SetActive(false);
             canOpenMap = false; 
         }
 
-        //If player presses G again after the map is already opened, 
+        //If player presses F again after the map is already opened, 
         //Close the map 
-       else if(Input.GetKeyDown(KeyCode.G) && canOpenMap == false)
+       else if(Input.GetKeyDown(KeyCode.F) && canOpenMap == false)
         {
             fullMap.SetActive(false);
+            mapPrompts.SetActive(true);
             canOpenMap = true; 
-
         }
 
         if(Input.GetKeyDown(KeyCode.P) && paused == false)

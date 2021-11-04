@@ -81,7 +81,7 @@ public class PlayerInteract : MonoBehaviour
             object2Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             continueButton.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             Debug.Log("Player has entered NPC's interactable range");
-            gm.InteractPrompt("Press X to Talk");
+            gm.InteractPrompt("             Talk");
         }
 
         //If the player's interact radius is near a pickup object,
@@ -91,7 +91,7 @@ public class PlayerInteract : MonoBehaviour
             currentPickUp = other.gameObject;
             canInteract = true;
             Debug.Log("Player has entered Pickup's interactable range");
-            gm.InteractPrompt("Press X to pickup");
+            gm.InteractPrompt("             Pickup");
         }
 
     }
