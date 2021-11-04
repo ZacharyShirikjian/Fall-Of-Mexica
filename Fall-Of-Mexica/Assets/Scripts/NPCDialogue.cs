@@ -64,6 +64,15 @@ public class NPCDialogue : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(Type());
+
+        //Disable the DialogueIcon when talking to the NPC 
+        this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("Player is no longer talking to the NPC");
+        this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -75,11 +84,11 @@ public class NPCDialogue : MonoBehaviour
             DialogueBox.SetActive(true);
         }
         //If the player presses space, display all of the text for that particular sentence. 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            textDisplay.text = sentences[index].line;
-            StopAllCoroutines();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    textDisplay.text = sentences[index].line;
+        //    StopAllCoroutines();
+        //}
 
         // This makes sure that the user cannot spam the Continue (>>>) button.
         if (textDisplay.text == sentences[index].line)
