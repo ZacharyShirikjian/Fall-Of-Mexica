@@ -26,8 +26,6 @@ public class PlayerInteract : MonoBehaviour
 
     public GameObject currentPickUp = null;
 
-    public GameObject pickUpIcon; 
-
     //OTEHR VARIABLES//
     public bool canInteract; //If the player can interact with something, this gets set to true
     public bool holdingObject = false; //If the player is holding a pickup, set this to true 
@@ -63,7 +61,7 @@ public class PlayerInteract : MonoBehaviour
             Destroy(currentPickUp.gameObject);
             Debug.Log("Player has picked up maize");
             gm.UpdateCurrentObjective("Bring the Maize to the Temple"); 
-            pickUpIcon.SetActive(true); //tweak this later? 
+            gm.pickUpIcon.SetActive(true); //tweak this later? 
         }
 
     }
@@ -81,7 +79,7 @@ public class PlayerInteract : MonoBehaviour
             object2Button.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             continueButton.npcDialogueReference = currentNPC.GetComponent<NPCDialogue>();
             Debug.Log("Player has entered NPC's interactable range");
-            gm.InteractPrompt("             Talk");
+            gm.InteractPrompt("Talk");
         }
 
         //If the player's interact radius is near a pickup object,
@@ -91,7 +89,7 @@ public class PlayerInteract : MonoBehaviour
             currentPickUp = other.gameObject;
             canInteract = true;
             Debug.Log("Player has entered Pickup's interactable range");
-            gm.InteractPrompt("             Pickup");
+            gm.InteractPrompt("Pickup");
         }
 
     }

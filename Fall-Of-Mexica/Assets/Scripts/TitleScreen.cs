@@ -5,10 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject creditsPanel;
+
+    private void Start()
     {
-        
+        creditsPanel.SetActive(false);
     }
 
     /*
@@ -30,12 +32,22 @@ public class TitleScreen : MonoBehaviour
         Application.Quit();
     }
 
-    /*
-     * This gets called when clicking CREDITS on the title screen.
-     * Display the CREDITS GameObject, OR load a new scene displaying the credits.
-     */ 
+   /*
+    * This gets called when clicking CREDITS on the title screen.
+    * Enable the CreditsPanel GameObject.
+    */ 
     public void OpenCredits()
     {
+        creditsPanel.SetActive(true);
+    }
 
+   /*
+    * This gets called when clicking on the BACK button on the title screen.
+    * Close out the credits panel,
+    * Returning back to the title screen.
+    */
+    public void CloseCredits()
+    {
+        creditsPanel.SetActive(false);
     }
 }

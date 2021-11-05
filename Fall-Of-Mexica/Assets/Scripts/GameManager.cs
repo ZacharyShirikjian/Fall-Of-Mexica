@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI interactPromptText;
     public GameObject PauseMenu;
     private GameObject player;
+    public GameObject pickUpIcon; 
 
     private GameObject currentObjectiveUI;
     private TextMeshProUGUI currentObjectiveText;
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
         PauseMenu.SetActive(false);
         player = GameObject.FindWithTag("Player");
         mapPrompts = GameObject.Find("MapPrompts");
+        pickUpIcon = GameObject.Find("PickupIcon");
+        pickUpIcon.SetActive(false);
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
