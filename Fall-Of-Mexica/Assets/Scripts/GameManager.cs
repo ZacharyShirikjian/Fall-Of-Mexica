@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI npcNameText;
     public TextMeshProUGUI dialogueText;
 
+    private TextMeshProUGUI maizeCounter; 
+    private int numOfMaize; 
+
     private GameObject mapPrompts; 
     public GameObject fullMap; //reference to the image of the full Tenochtitlan map 
 
@@ -37,6 +40,9 @@ public class GameManager : MonoBehaviour
         mapPrompts = GameObject.Find("MapPrompts");
         pickUpIcon = GameObject.Find("PickupIcon");
         pickUpIcon.SetActive(false);
+        maizeCounter = GameObject.Find("MaizeCounter").GetComponent<TextMeshProUGUI>();
+        maizeCounter.SetText("");
+        numOfMaize = 0;
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
@@ -133,6 +139,13 @@ public class GameManager : MonoBehaviour
             currentObjectiveText.SetText(currentObjective);
 
         }
+    }
+
+    public void IncreaseMaizeCounter()
+    {
+        numOfMaize++;
+        Debug.Log(numOfMaize);
+        maizeCounter.SetText(numOfMaize.ToString());
     }
 
 

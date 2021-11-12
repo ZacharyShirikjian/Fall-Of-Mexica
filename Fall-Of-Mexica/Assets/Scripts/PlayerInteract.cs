@@ -54,14 +54,15 @@ public class PlayerInteract : MonoBehaviour
 
         //For when the player is picking up a pickup,
         //Diplay the Pickup the player has on screen 
-        else if(Input.GetKeyDown(KeyCode.X) && currentPickUp && canInteract == true)
+        else if(Input.GetKeyDown(KeyCode.X) && currentPickUp)
         {
-            canInteract = false;
+            //canInteract = false;
             holdingObject = true;
             Destroy(currentPickUp.gameObject);
             Debug.Log("Player has picked up maize");
             gm.UpdateCurrentObjective("Bring the Maize to the Temple"); 
             gm.pickUpIcon.SetActive(true); //tweak this later? 
+            gm.IncreaseMaizeCounter();
         }
 
     }
