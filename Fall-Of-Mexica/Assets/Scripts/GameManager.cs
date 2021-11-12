@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private int numOfMaize; 
 
     private GameObject mapPrompts; 
+    public GameObject miniMap; //reference to Minimap GameObject 
     public GameObject fullMap; //reference to the image of the full Tenochtitlan map 
 
     //VARIABLES//
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
         maizeCounter = GameObject.Find("MaizeCounter").GetComponent<TextMeshProUGUI>();
         maizeCounter.SetText("");
         numOfMaize = 0;
+        miniMap.SetActive(true);
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
@@ -64,13 +66,22 @@ public class GameManager : MonoBehaviour
 
         if(player.GetComponentInChildren<PlayerInteract>().talking == true)
         {
+            miniMap.SetActive(false);
             canOpenMap = false;
             mapPrompts.SetActive(false);
+        }
+
+        else if(player.GetComponentInChildren<PlayerInteract>().talking == false)
+        {
+            miniMap.SetActive(true);
+            canOpenMap = true;
+            mapPrompts.SetActive(true);
         }
 
         //If player is pressing F, map appears
         if (Input.GetKeyDown(KeyCode.F) && canOpenMap == true && player.GetComponentInChildren<PlayerInteract>().talking == false)
         {
+             miniMap.SetActive(false);
             fullMap.SetActive(true);
             mapPrompts.SetActive(false);
             player.GetComponent<PlayerMovement>().canMove = false; 
@@ -83,6 +94,7 @@ public class GameManager : MonoBehaviour
         {
             fullMap.SetActive(false);
             mapPrompts.SetActive(true);
+            miniMap.SetActive(true);
             player.GetComponent<PlayerMovement>().canMove = true;
             canOpenMap = true; 
         }
