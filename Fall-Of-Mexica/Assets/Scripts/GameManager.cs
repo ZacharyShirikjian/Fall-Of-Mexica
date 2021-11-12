@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
         {
             fullMap.SetActive(true);
             mapPrompts.SetActive(false);
+            player.GetComponent<PlayerMovement>().canMove = false; 
             canOpenMap = false; 
         }
 
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
         {
             fullMap.SetActive(false);
             mapPrompts.SetActive(true);
+            player.GetComponent<PlayerMovement>().canMove = true;
             canOpenMap = true; 
         }
 

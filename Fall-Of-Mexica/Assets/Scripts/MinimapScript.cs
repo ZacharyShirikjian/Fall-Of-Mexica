@@ -15,6 +15,9 @@ public class MinimapScript : MonoBehaviour
         Vector3 newPosition = player.position;
         newPosition.y = transform.position.y;
         transform.position = newPosition; 
+
+        //Rotate the Minimap based on the rotation of the player
+        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f); 
     }
 
 }
