@@ -146,6 +146,10 @@ public class GameManager : MonoBehaviour
         numOfMaize++;
         Debug.Log(numOfMaize);
         maizeCounter.SetText(numOfMaize.ToString());
+        if(numOfMaize >= 7)
+        {
+            currentObjectiveText.SetText("Bring Maize to Templo Mayor");
+        }
     }
 
 
