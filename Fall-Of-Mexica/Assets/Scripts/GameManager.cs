@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject option1Button;
     public GameObject option2Button; 
+    public GameObject continueButton;
     public GameObject DialogueBox;
     public TextMeshProUGUI npcNameText;
     public TextMeshProUGUI dialogueText;
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
+        continueButton.SetActive(false);
         DialogueBox.SetActive(false);
         dialogueText = DialogueBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         dialogueText.SetText("");
@@ -74,29 +76,29 @@ public class GameManager : MonoBehaviour
         else if(player.GetComponentInChildren<PlayerInteract>().talking == false)
         {
             miniMap.SetActive(true);
-            canOpenMap = true;
             mapPrompts.SetActive(true);
         }
 
         //If player is pressing F, map appears
-        if (Input.GetKeyDown(KeyCode.F) && canOpenMap == true && player.GetComponentInChildren<PlayerInteract>().talking == false)
+        if(paused == false && player.GetComponentInChildren<PlayerInteract>().talking == false && canOpenMap == true && Input.GetKeyDown(KeyCode.F))
         {
-             miniMap.SetActive(false);
+
+            miniMap.SetActive(false);
             fullMap.SetActive(true);
             mapPrompts.SetActive(false);
             player.GetComponent<PlayerMovement>().canMove = false; 
             canOpenMap = false; 
         }
 
-        //If player presses F again after the map is already opened, 
+         //If player presses F again after the map is already opened, 
         //Close the map 
-       else if(Input.GetKeyDown(KeyCode.F) && canOpenMap == false)
+        else if(paused == false && player.GetComponentInChildren<PlayerInteract>().talking == false && canOpenMap == false && Input.GetKeyDown(KeyCode.F))
         {
             fullMap.SetActive(false);
             mapPrompts.SetActive(true);
             miniMap.SetActive(true);
             player.GetComponent<PlayerMovement>().canMove = true;
-            canOpenMap = true; 
+            canOpenMap = true;
         }
 
         if(Input.GetKeyDown(KeyCode.P) && paused == false)
@@ -145,7 +147,7 @@ public class GameManager : MonoBehaviour
     {
         if(currentObjective == "")
         {
-            currentObjectiveText.SetText("Explore");
+            currentObjectiveText.SetText("Talk to Townspeople");
         }
 
         else

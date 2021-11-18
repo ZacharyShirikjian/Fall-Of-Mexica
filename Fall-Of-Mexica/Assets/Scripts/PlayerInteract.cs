@@ -21,10 +21,16 @@ public class PlayerInteract : MonoBehaviour
     //Reference to the parent of the player 
     private PlayerMovement PlayerMoveRef; 
 
+    //Reference to the currentNPC that player is near 
     public GameObject currentNPC = null;
     public NPC npcScript = null;
 
+    //Reference to the currentPickup that the player is near 
     public GameObject currentPickUp = null;
+
+    //Reference to the currentSignpost that the player is near 
+    public GameObject currentSignpost = null;
+    public SignpostDialogue signpostScript = null; 
 
     //OTEHR VARIABLES//
     public bool canInteract; //If the player can interact with something, this gets set to true
@@ -65,6 +71,18 @@ public class PlayerInteract : MonoBehaviour
             gm.IncreaseMaizeCounter();
         }
 
+        //For interacting with signposts
+        else if(Input.GetKeyDown(KeyCode.X) && currentSignpost && canInteract == true)
+        {
+            Debug.Log("Player is reading a sign");
+            currentSignpost.GetComponent<SignpostDialogue>().enabled = true; 
+            canInteract = false; 
+            talking = true; 
+            PlayerMoveRef.canMove = false; 
+            //Open up a dialogue box that shows the name of the signpost head & a brief description of what that symbol means 
+            //eg Eagle - This symbolizes the founding of Tenochtitlan, where it has been said that an eagle was perched on top of a cactus, eating a snake near Lake Texcoco.
+        }
+
     }
 
     //For when something enters the player's interact radius 
@@ -93,11 +111,19 @@ public class PlayerInteract : MonoBehaviour
             gm.InteractPrompt("Pickup");
         }
 
+        //For interacting w/ signposts 
+        else if(other.CompareTag("Signpost"))
+        {
+            currentSignpost = other.gameObject;
+            signpostScript = currentSignpost.GetComponent<SignpostDialogue>();
+            canInteract = true;
+            gm.InteractPrompt("Read");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Pickup" || other.gameObject.tag == "NPC")
+        if(other.gameObject.tag == "Signpost" || other.gameObject.tag == "Pickup" || other.gameObject.tag == "NPC")
         {
             canInteract = false;
             Debug.Log("Player has left NPC's interactable range");
@@ -111,6 +137,12 @@ public class PlayerInteract : MonoBehaviour
             else if(other.gameObject ==  currentPickUp)
             {
                 currentPickUp = null;
+            }
+
+            else if(other.gameObject == currentSignpost)
+            {
+                currentSignpost = null; 
+                signpostScript = null;
             }
         }
     }

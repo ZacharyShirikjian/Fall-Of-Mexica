@@ -113,7 +113,7 @@ public class NPCDialogue : MonoBehaviour
             else
             {
                 option1Button.SetActive(false);
-                continueButton.SetActive(false);
+                //continueButton.SetActive(false);
                 continueButton.SetActive(true);
             }
         }
