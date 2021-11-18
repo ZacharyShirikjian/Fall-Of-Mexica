@@ -107,6 +107,57 @@ TextureImporter:
   - first:
       213: -1545383552312111396
     second: FOM_TILESET_LARGE_34
+  - first:
+      213: -1499519805425802239
+    second: FOM_TILESET_LARGE_35
+  - first:
+      213: 3103025259701307751
+    second: FOM_TILESET_LARGE_36
+  - first:
+      213: -5864414481245969025
+    second: FOM_TILESET_LARGE_37
+  - first:
+      213: -5442959032764848323
+    second: FOM_TILESET_LARGE_38
+  - first:
+      213: 2183802017582623312
+    second: FOM_TILESET_LARGE_40
+  - first:
+      213: -7671987802897600119
+    second: FOM_TILESET_LARGE_41
+  - first:
+      213: 9123419795720428009
+    second: FOM_TILESET_LARGE_42
+  - first:
+      213: 2001887123126265487
+    second: FOM_TILESET_LARGE_43
+  - first:
+      213: 7507805079123427721
+    second: FOM_TILESET_LARGE_44
+  - first:
+      213: -1430157040453855648
+    second: FOM_TILESET_LARGE_45
+  - first:
+      213: 7298492728808614577
+    second: FOM_TILESET_LARGE_46
+  - first:
+      213: 5257336853940329026
+    second: FOM_TILESET_LARGE_47
+  - first:
+      213: -6094807263826057022
+    second: FOM_TILESET_LARGE_49
+  - first:
+      213: -7384406665667510811
+    second: FOM_TILESET_LARGE_50
+  - first:
+      213: -1423485503878806612
+    second: FOM_TILESET_LARGE_51
+  - first:
+      213: -3973501123082041572
+    second: FOM_TILESET_LARGE_52
+  - first:
+      213: 4880040866978877334
+    second: FOM_TILESET_LARGE_53
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,7 +221,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -182,7 +233,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -194,7 +245,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -206,7 +257,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: tvOS
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -218,7 +269,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -230,7 +281,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Lumin
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -242,7 +293,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -254,7 +305,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -272,9 +323,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2970
-        width: 594
-        height: 594
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +343,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_1
       rect:
         serializedVersion: 2
-        x: 594
-        y: 2970
-        width: 594
-        height: 594
+        x: 592
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +364,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_2
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 2970
-        width: 594
-        height: 594
+        x: 1184
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +385,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_3
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 2970
-        width: 594
-        height: 594
+        x: 1776
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,10 +406,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_4
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 2970
-        width: 594
-        height: 594
+        x: 2368
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +427,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_5
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 2970
-        width: 594
-        height: 594
+        x: 2960
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +448,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2376
-        width: 594
-        height: 594
+        x: 3552
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +469,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_7
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 2376
-        width: 594
-        height: 594
+        x: 4144
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +490,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_8
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 2376
-        width: 594
-        height: 594
+        x: 4736
+        y: 2972
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,10 +511,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_9
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 2376
-        width: 594
-        height: 594
+        x: 0
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +532,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_10
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 2376
-        width: 594
-        height: 594
+        x: 592
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +553,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1782
-        width: 594
-        height: 594
+        x: 1184
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,10 +574,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_12
       rect:
         serializedVersion: 2
-        x: 594
-        y: 1782
-        width: 594
-        height: 594
+        x: 1776
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +595,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_13
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1782
-        width: 594
-        height: 594
+        x: 2368
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,10 +616,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_14
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 1782
-        width: 594
-        height: 594
+        x: 2960
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,10 +637,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_15
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 1782
-        width: 594
-        height: 594
+        x: 3552
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,10 +658,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_16
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 1782
-        width: 594
-        height: 594
+        x: 4144
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +679,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1188
-        width: 594
-        height: 594
+        x: 4736
+        y: 2380
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,10 +700,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_18
       rect:
         serializedVersion: 2
-        x: 594
-        y: 1188
-        width: 594
-        height: 594
+        x: 0
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,10 +721,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_19
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1188
-        width: 594
-        height: 594
+        x: 592
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -691,10 +742,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_20
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 1188
-        width: 594
-        height: 594
+        x: 1184
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +763,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_21
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 1188
-        width: 594
-        height: 594
+        x: 1776
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,10 +784,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_22
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 1188
-        width: 594
-        height: 594
+        x: 2368
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,10 +805,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 594
-        width: 594
-        height: 594
+        x: 2960
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,10 +826,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_24
       rect:
         serializedVersion: 2
-        x: 594
-        y: 594
-        width: 594
-        height: 594
+        x: 3552
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,10 +847,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_25
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 594
-        width: 594
-        height: 594
+        x: 4144
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,10 +868,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_26
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 594
-        width: 594
-        height: 594
+        x: 4736
+        y: 1788
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,10 +889,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_27
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 594
-        width: 594
-        height: 594
+        x: 0
+        y: 1196
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,10 +910,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_28
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 594
-        width: 594
-        height: 594
+        x: 592
+        y: 1196
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,10 +931,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 594
-        height: 594
+        x: 1184
+        y: 1196
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,76 +949,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FOM_TILESET_LARGE_30
-      rect:
-        serializedVersion: 2
-        x: 594
-        y: 0
-        width: 594
-        height: 594
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97330266000f05f30800000000000000
-      internalID: 4562410307030365049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FOM_TILESET_LARGE_31
-      rect:
-        serializedVersion: 2
-        x: 1188
-        y: 0
-        width: 594
-        height: 594
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cffc52135a5ccd60800000000000000
-      internalID: 7911797958219988936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FOM_TILESET_LARGE_32
-      rect:
-        serializedVersion: 2
-        x: 1782
-        y: 0
-        width: 594
-        height: 594
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab32b0fac717ba060800000000000000
-      internalID: 6965786028985230266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: FOM_TILESET_LARGE_33
       rect:
         serializedVersion: 2
-        x: 2376
-        y: 0
-        width: 594
-        height: 594
+        x: 3552
+        y: 1196
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,10 +973,10 @@ TextureImporter:
       name: FOM_TILESET_LARGE_34
       rect:
         serializedVersion: 2
-        x: 2970
-        y: 0
-        width: 594
-        height: 594
+        x: 4144
+        y: 1196
+        width: 592
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,6 +986,363 @@ TextureImporter:
       bones: []
       spriteID: cde84b2d8d1bd8ae0800000000000000
       internalID: -1545383552312111396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_35
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 1196
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104aee78ea2a03be0800000000000000
+      internalID: -1499519805425802239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7698f8d7809201b20800000000000000
+      internalID: 3103025259701307751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_37
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f756dada91a6d9ea0800000000000000
+      internalID: -5864414481245969025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_38
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d372c050999b674b0800000000000000
+      internalID: -5442959032764848323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_40
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a2bcd5d5c6e4e10800000000000000
+      internalID: 2183802017582623312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_41
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981b82fbdbf978590800000000000000
+      internalID: -7671987802897600119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_42
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9deac57f5ec9e70800000000000000
+      internalID: 9123419795720428009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_43
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86ae566bb128cb10800000000000000
+      internalID: 2001887123126265487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_44
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 604
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981860001f4113860800000000000000
+      internalID: 7507805079123427721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06659bebfbf072ce0800000000000000
+      internalID: -1430157040453855648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_46
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baa860c774794560800000000000000
+      internalID: 7298492728808614577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_47
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24adeab9300d5f840800000000000000
+      internalID: 5257336853940329026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_49
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c86d21d515ea6ba0800000000000000
+      internalID: -6094807263826057022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_50
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed7cd70341558990800000000000000
+      internalID: -7384406665667510811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_51
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3c266e973ce3ce0800000000000000
+      internalID: -1423485503878806612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_52
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c174414f7c94bd8c0800000000000000
+      internalID: -3973501123082041572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_53
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 12
+        width: 592
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f4aad105369b340800000000000000
+      internalID: 4880040866978877334
       vertices: []
       indices: 
       edges: []

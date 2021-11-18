@@ -1,0 +1,1332 @@
+fileFormatVersion: 2
+guid: b7629053e6bd23c4eb7da2089d4565b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5180084738361755928
+    second: FOM_TILESET_LARGE_v2_0
+  - first:
+      213: -6726556612676839915
+    second: FOM_TILESET_LARGE_v2_1
+  - first:
+      213: -7757740659992638013
+    second: FOM_TILESET_LARGE_v2_2
+  - first:
+      213: 5468625907370413935
+    second: FOM_TILESET_LARGE_v2_3
+  - first:
+      213: -1412250824027129775
+    second: FOM_TILESET_LARGE_v2_4
+  - first:
+      213: -5555681678922482166
+    second: FOM_TILESET_LARGE_v2_5
+  - first:
+      213: -1876963494654153842
+    second: FOM_TILESET_LARGE_v2_6
+  - first:
+      213: 9175726021177098166
+    second: FOM_TILESET_LARGE_v2_7
+  - first:
+      213: 5859218323637089489
+    second: FOM_TILESET_LARGE_v2_8
+  - first:
+      213: 60012816178704342
+    second: FOM_TILESET_LARGE_v2_9
+  - first:
+      213: -2776986794936400478
+    second: FOM_TILESET_LARGE_v2_10
+  - first:
+      213: -1357994846453521175
+    second: FOM_TILESET_LARGE_v2_11
+  - first:
+      213: 7506055851123672541
+    second: FOM_TILESET_LARGE_v2_12
+  - first:
+      213: 8520859238825243614
+    second: FOM_TILESET_LARGE_v2_13
+  - first:
+      213: -3660144361443538543
+    second: FOM_TILESET_LARGE_v2_14
+  - first:
+      213: 4269850437597391711
+    second: FOM_TILESET_LARGE_v2_15
+  - first:
+      213: 1854949708612508914
+    second: FOM_TILESET_LARGE_v2_16
+  - first:
+      213: 1605022177497243393
+    second: FOM_TILESET_LARGE_v2_17
+  - first:
+      213: 2127419747710273957
+    second: FOM_TILESET_LARGE_v2_18
+  - first:
+      213: -77241192651624234
+    second: FOM_TILESET_LARGE_v2_19
+  - first:
+      213: -6031414115884901052
+    second: FOM_TILESET_LARGE_v2_20
+  - first:
+      213: 5905539569003553576
+    second: FOM_TILESET_LARGE_v2_21
+  - first:
+      213: -3783006852474783474
+    second: FOM_TILESET_LARGE_v2_22
+  - first:
+      213: 8243488640529086861
+    second: FOM_TILESET_LARGE_v2_23
+  - first:
+      213: -4963937751149558041
+    second: FOM_TILESET_LARGE_v2_24
+  - first:
+      213: 7724582167809368362
+    second: FOM_TILESET_LARGE_v2_25
+  - first:
+      213: -9027696440143309479
+    second: FOM_TILESET_LARGE_v2_26
+  - first:
+      213: 5515043093899763120
+    second: FOM_TILESET_LARGE_v2_27
+  - first:
+      213: -2932001380180209740
+    second: FOM_TILESET_LARGE_v2_28
+  - first:
+      213: 4146577736713721579
+    second: FOM_TILESET_LARGE_v2_29
+  - first:
+      213: 8370972860804467115
+    second: FOM_TILESET_LARGE_v2_30
+  - first:
+      213: -387771027937802396
+    second: FOM_TILESET_LARGE_v2_31
+  - first:
+      213: 3864952523820693183
+    second: FOM_TILESET_LARGE_v2_32
+  - first:
+      213: -1630032960474667797
+    second: FOM_TILESET_LARGE_v2_33
+  - first:
+      213: 4570549776350864361
+    second: FOM_TILESET_LARGE_v2_34
+  - first:
+      213: -5097050667129778980
+    second: FOM_TILESET_LARGE_v2_35
+  - first:
+      213: -8993067619614818046
+    second: FOM_TILESET_LARGE_v2_36
+  - first:
+      213: -5559488076518413669
+    second: FOM_TILESET_LARGE_v2_37
+  - first:
+      213: -208097482844377857
+    second: FOM_TILESET_LARGE_v2_38
+  - first:
+      213: 3757298453452232710
+    second: FOM_TILESET_LARGE_v2_39
+  - first:
+      213: -7989599424322633341
+    second: FOM_TILESET_LARGE_v2_40
+  - first:
+      213: 6013264225493738515
+    second: FOM_TILESET_LARGE_v2_41
+  - first:
+      213: 8598087771214515598
+    second: FOM_TILESET_LARGE_v2_42
+  - first:
+      213: -5794008122997030347
+    second: FOM_TILESET_LARGE_v2_43
+  - first:
+      213: -2862201408711070619
+    second: FOM_TILESET_LARGE_v2_44
+  - first:
+      213: 3599381069842947270
+    second: FOM_TILESET_LARGE_v2_45
+  - first:
+      213: 2748985482557744898
+    second: FOM_TILESET_LARGE_v2_46
+  - first:
+      213: 5559700931960481475
+    second: FOM_TILESET_LARGE_v2_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 594
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8198970df9b53e740800000000000000
+      internalID: 5180084738361755928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_1
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51697db466876a2a0800000000000000
+      internalID: -6726556612676839915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_2
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdc885d8f7f65490800000000000000
+      internalID: -7757740659992638013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_3
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fcf4ae94674eb40800000000000000
+      internalID: 5468625907370413935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_4
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1583c14ab5da66ce0800000000000000
+      internalID: -1412250824027129775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_5
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0efda2c2f046e2b0800000000000000
+      internalID: -5555681678922482166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_6
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b63cc65afa3f5e0800000000000000
+      internalID: -1876963494654153842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_7
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 2970
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfb190833ab65f70800000000000000
+      internalID: 9175726021177098166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d439d99500205150800000000000000
+      internalID: 5859218323637089489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df6d4e965535d000800000000000000
+      internalID: 60012816178704342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_10
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a58ddd19392679d0800000000000000
+      internalID: -2776986794936400478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_11
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4a352d1ee672de0800000000000000
+      internalID: -1357994846453521175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_12
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5087e170eda2860800000000000000
+      internalID: 7506055851123672541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_13
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3b84f055c204670800000000000000
+      internalID: 8520859238825243614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_14
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1994285781e843dc0800000000000000
+      internalID: -3660144361443538543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_15
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 2376
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5be901b95e814b30800000000000000
+      internalID: 4269850437597391711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc101a9eea1eb910800000000000000
+      internalID: 1854949708612508914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_17
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fd85aaa2f264610800000000000000
+      internalID: 1605022177497243393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_18
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90c6e2dfc168d10800000000000000
+      internalID: 2127419747710273957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_19
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0f8f56b859deef0800000000000000
+      internalID: -77241192651624234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_20
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d576141dc1c4ca0800000000000000
+      internalID: -6031414115884901052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_21
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8236879f2f0b4f150800000000000000
+      internalID: 5905539569003553576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_22
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e093f579f4f008bc0800000000000000
+      internalID: -3783006852474783474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_23
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 1782
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8934b02e31c66270800000000000000
+      internalID: 8243488640529086861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e644975aec8c1bb0800000000000000
+      internalID: -4963937751149558041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_25
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2128961e8a333b60800000000000000
+      internalID: 7724582167809368362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_26
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95513312bed27b280800000000000000
+      internalID: -9027696440143309479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_27
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdddd4597e598c40800000000000000
+      internalID: 5515043093899763120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_28
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf476577407f47d0800000000000000
+      internalID: -2932001380180209740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_29
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be65d566b7a9b8930800000000000000
+      internalID: 4146577736713721579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_30
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba98fa0377bab2470800000000000000
+      internalID: 8370972860804467115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_31
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 1188
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4674499fd4c5e9af0800000000000000
+      internalID: -387771027937802396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6f410d7d113a530800000000000000
+      internalID: 3864952523820693183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_33
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4aab2a8a5f069e0800000000000000
+      internalID: -1630032960474667797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_34
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e362a74ecadd6f30800000000000000
+      internalID: 4570549776350864361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_35
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdccf8f6c63a349b0800000000000000
+      internalID: -5097050667129778980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_36
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2018ac3b5a4323380800000000000000
+      internalID: -8993067619614818046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_37
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9aa912cc0bb8d2b0800000000000000
+      internalID: -5559488076518413669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_38
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc68602170bc1df0800000000000000
+      internalID: -208097482844377857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_39
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 594
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6081521590b942430800000000000000
+      internalID: 3757298453452232710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381859f77ad3f1190800000000000000
+      internalID: -7989599424322633341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_41
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3146e1514f7637350800000000000000
+      internalID: 6013264225493738515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_42
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d0fd6f54b825770800000000000000
+      internalID: 8598087771214515598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_43
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532c8036f4c879fa0800000000000000
+      internalID: -5794008122997030347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_44
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c672ebbfa6748d0800000000000000
+      internalID: -2862201408711070619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_45
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc114f330293f130800000000000000
+      internalID: 3599381069842947270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_46
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2076f8c4bbb562620800000000000000
+      internalID: 2748985482557744898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FOM_TILESET_LARGE_v2_47
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 0
+        width: 594
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6a9e28a86082d40800000000000000
+      internalID: 5559700931960481475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
