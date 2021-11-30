@@ -74,10 +74,11 @@ public class CutsceneDialogue : MonoBehaviour
     // Goes onto the next sentence.
     public void NextSentence(bool yes)
     {
+        Debug.Log("awET");
         continueButton.SetActive(false);
         if (index < sentences.Length - 1)
         {
-            //index++;
+            index++;
 
             //If the player clicks the continue button, continue to the next sentence
             if (yes)
@@ -96,8 +97,8 @@ public class CutsceneDialogue : MonoBehaviour
         else
         {
             textDisplay.text = "";
-            DialogueBox.SetActive(false);
             StartCoroutine(loadSceneDelay());
+            DialogueBox.SetActive(false);
         }
     }
     

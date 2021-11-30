@@ -345,7 +345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Anci'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -726,7 +726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &923772234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,7 +838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -170, y: 42.5}
+  m_AnchoredPosition: {x: -89.64966, y: 42.5}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &1303561824
@@ -933,19 +933,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 1303561824}
   npcNameText: {fileID: 636007798}
-  npcName: jo
+  npcName: Narrator
   textDisplay: {fileID: 2038688796}
   sentences:
-  - line: hi
+  - line: 'You look back towards Templo Mayor and watch as a prisoner is escorted
+      up the pyramid-like structure to meet their doom. There are priests positioned
+      at the top and bottom of the temple. '
     yes: 1
-    npcName: jo
-  - line: sup
+    npcName: Narrator
+  - line: 'A war prisoner begins to climb the steps and you notice that they are
+      looking around in silent fear pleading for others to help him, however those
+      nearby look back at him with somber and sorrow. '
     yes: 2
-    npcName: jomama
-  - line: bye
+    npcName: Narrator
+  - line: 'You understand what the man is feeling, however it''s necessary, as without
+      his sacrifice we''d all be dead in a matter of days. The prisoner''s expression
+      changes as he has finally accepted his fate as a sacrifice for the great sun
+      god Huitzilopochtli. '
     yes: 3
-    npcName: jo
-  typingSpeed: 0
+    npcName: 'Narrator '
+  - line: 'You understand what the man is feeling, however it''s necessary, as without
+      his sacrifice we''d all be dead in a matter of days. The prisoner''s expression
+      changes as he has finally accepted his fate as a sacrifice for the great sun
+      god Huitzilopochtli. '
+    yes: 4
+    npcName: 'Narrator '
+  - line: 'The prisoner has reached the top. It becomes harder to tell what''s going
+      on from this distance, but you can make out a couple priests surround a massive
+      stone table situated at the top of the temple. '
+    yes: 5
+    npcName: 'Narrator '
+  - line: 'It seems the man has begun to lay down on the table as a priest pulls
+      out a ceremonial obsidian dagger which will bring about the man''s demise.
+      The other priests draw closer to the stone table holding down the man''s limbs
+      so that he may not run away. '
+    yes: 6
+    npcName: 'Narrator '
+  - line: 'The armed priest raises the dagger, spouting some words up to the gods
+      that you can''t possibly hear from this distance. Before bringing it back down
+      onto the prisoner''s chests cutting something out of it. '
+    yes: 7
+    npcName: 'Narrator '
+  - line: The priest reveals that it's the man's still-beating heart and begins offering
+      it up to Huitzilopochtli and his glory so that we may have a new day tomorrow.
+      The other priests grab the prisoner's corpse and toss it down the stone steps
+      the man just climbed minutes before.
+    yes: 8
+    npcName: 'Narrator '
+  - line: 'You see more detail in the body as it comes flying down the steps towards
+      the base of the strucutre. Once it hits the bottom, the nearby priests begin
+      to gather around the body carrying weapons. As one of the priests begins to
+      cut off the head, you hear a strange noise as if the ground beneath you was
+      shaking louder and louder. '
+    yes: 9
+    npcName: 'Narrator '
+  - line: 'You turn around and see a horde of shiny men riding strange creatures
+      coming closer and closer. '
+    yes: 10
+    npcName: 'Narrator '
+  - line: 'They proceed to pass you and separate the man''s dead body from the priests.
+      You become enraged, thinking how furious the gods are for their ritual being
+      ruined by these men. Upon further inspection, they all have a disgusted expression
+      on their faces. '
+    yes: 11
+    npcName: 'Narrator '
+  - line: 'You question why they are angry, for they were the ones that interrupted
+      this sacred ritual. The one riding in front gets off his unusual beast first
+      and begins to speak. However, you cannot understand his unknown tounge. '
+    yes: 12
+    npcName: 'Narrator '
+  - line: 'Thankfully, the woman who was riding alongside them gets off her horse,
+      and speaks in your native tounge. '
+    yes: 13
+    npcName: 'Narrator '
+  typingSpeed: 0.02
   continueButton: {fileID: 923772232}
 --- !u!1 &1354166206
 GameObject:
@@ -1503,6 +1564,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1907364646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907364649}
+  - component: {fileID: 1907364648}
+  - component: {fileID: 1907364647}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1907364647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907364646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1907364648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907364646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1907364649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907364646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012019630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,8 +1848,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
