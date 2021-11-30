@@ -30,6 +30,11 @@ public class CutsceneDialogue : MonoBehaviour
     //The text to display
     public TextMeshProUGUI textDisplay;
 
+    //REFERENCE TO SFXMANAGER
+    private GameObject sfxManager;
+    public AudioSource audioSource;
+    private AudioClip dialogue;
+
     //Array of sentence2 objects (separate from the sentence objects, which are only used for the NPC Dialogue),
     //Sentence2 objects are ONLY used for cutscenes 
     public Sentence2[] sentences;
@@ -41,6 +46,8 @@ public class CutsceneDialogue : MonoBehaviour
     void Start()
     {
         npcNameText.text = npcName;
+        sfxManager = GameObject.Find("SFXManager");
+        dialogue = sfxManager.GetComponent<SFXManager>().dialouge;
         StartCoroutine(Type());
     }
 
@@ -67,6 +74,7 @@ public class CutsceneDialogue : MonoBehaviour
         foreach (char letter in sentences[index].line.ToCharArray())
         {
             textDisplay.text += letter;
+            //audioSource.PlayOneShot(dialogue);
             yield return new WaitForSeconds(typingSpeed);
         }
     }

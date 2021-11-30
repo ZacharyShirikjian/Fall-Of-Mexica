@@ -1779,6 +1779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonClick: {fileID: 8300000, guid: 031ed79312abcdd48b7c01b93dd82a03, type: 3}
   buttonHover: {fileID: 8300000, guid: f6f387cf5b483da46862e03ca310fbdf, type: 3}
+  dialouge: {fileID: 8300000, guid: 474ced6396fade1428adad539da1eae2, type: 3}
 --- !u!82 &947060042
 AudioSource:
   m_ObjectHideFlags: 0
