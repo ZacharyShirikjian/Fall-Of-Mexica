@@ -37,6 +37,11 @@ public class NPCDialogue : MonoBehaviour
     //Reference to the player 
     private GameObject player;
 
+    //REFERENCE TO SFXMANAGER
+    private GameObject sfxManager;
+    public AudioSource audioSource;
+    private AudioClip dialogue;
+
     //VARIABLES//
     public TextMeshProUGUI textDisplay;
     public Sentence[] sentences;
@@ -55,6 +60,8 @@ public class NPCDialogue : MonoBehaviour
         npcNameText.text = npcName;
         player = GameObject.FindWithTag("Player");
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        sfxManager = GameObject.Find("SFXManager");
+        dialogue = sfxManager.GetComponent<SFXManager>().dialouge;
         //StartCoroutine(Type());
     }
 
@@ -122,6 +129,7 @@ public class NPCDialogue : MonoBehaviour
     //Prints out the NPC's sentences, with adjustable typing speeds 
     IEnumerator Type()
     {
+        audioSource.Play();
         option1Button.SetActive(false);
         option2Button.SetActive(false);
         foreach (char letter in sentences[index].line.ToCharArray())
@@ -129,6 +137,7 @@ public class NPCDialogue : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        audioSource.Stop();
     }
 
     // Goes onto the next sentence.

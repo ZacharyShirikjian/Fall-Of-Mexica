@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     //REFERENCES//
     private SpriteRenderer sprite; //reference to the player's sprite 
+    public GameObject minimapIcon; //reference to the minimap icon 
     //private Rigidbody2D rb2d; //reference to the player's rigidbody 
 
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         */
             if (horizontalInput < 0)
             {
+                minimapIcon.GetComponent<SpriteRenderer>().flipX = true;
                 sprite.flipX = false;
                 lastDir = false;
             }
@@ -66,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
              */
             else if (horizontalInput > 0)
             {
+                minimapIcon.GetComponent<SpriteRenderer>().flipX = false;
                 sprite.flipX = true;
                 lastDir = true;
             }

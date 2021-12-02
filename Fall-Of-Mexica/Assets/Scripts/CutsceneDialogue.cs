@@ -74,7 +74,6 @@ public class CutsceneDialogue : MonoBehaviour
         foreach (char letter in sentences[index].line.ToCharArray())
         {
             textDisplay.text += letter;
-            //audioSource.PlayOneShot(dialogue);
             yield return new WaitForSeconds(typingSpeed);
         }
     }
