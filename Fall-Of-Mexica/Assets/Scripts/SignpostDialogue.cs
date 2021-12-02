@@ -78,6 +78,7 @@ public class SignpostDialogue : MonoBehaviour
     // Goes onto the next sentence.
     public void NextSentence(bool yes)
     {
+        continueButton.SetActive(false);
         if (index < sentences.Length - 1)
         {
             //index++;

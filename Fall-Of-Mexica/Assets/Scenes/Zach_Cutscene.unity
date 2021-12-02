@@ -1020,6 +1020,37 @@ MonoBehaviour:
       and speaks in your native tounge. '
     yes: 13
     npcName: 'Narrator '
+  - line: 'Hello, my name is Malintzin, and this man has great influence but doesn''t
+      speak your language so I will translate the words he speaks: "Stop you barbarians!
+      Do not descerate this man''s body any further. What sort of savagery is this?"
+      Wait, I need to talk to him for a second. '
+    yes: 14
+    npcName: Malintzin
+  - line: She turns to the man who was speaking and begins top talk to him in the
+      language you couldn't understand. Your attention begins to shift to the shining
+      men behind them as they look around sneering and focus on the two in front
+      who you can assume is their leader as he holds himself much differently than
+      the others.
+    yes: 15
+    npcName: Narrator
+  - line: 'The two who were talking begin to raise their voice before they go very
+      quiet. After a couple of seconds the man begins to speak again followed by
+      the odd woman. '
+    yes: 16
+    npcName: Narrator
+  - line: '"I''m sorry for being disrespectful, let me introduce myself properly.
+      I''m Hernando Cortes, delegate of Spain, at your service. '
+    yes: 17
+    npcName: 'Cortes '
+  - line: Oh honorable Nahua people, where may I meet your leader, the great Montezuma
+      II? I am here to speak of an alliance. I believe we have much to offer to both
+      our people. Now, I will let you continue on with your primitive ritual.
+    yes: 18
+    npcName: 'Cortes '
+  - line: True to their word, they left upon begin told where to meet with his majesty,
+      and the ritual was able to continue and finish without any interruptions.
+    yes: 19
+    npcName: 'Narrator '
   typingSpeed: 0.02
   continueButton: {fileID: 923772232}
 --- !u!1 &1354166206

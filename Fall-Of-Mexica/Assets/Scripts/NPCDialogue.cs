@@ -98,7 +98,7 @@ public class NPCDialogue : MonoBehaviour
 
                 option1Button.SetActive(true);
                 option2Button.SetActive(true);
-                continueButton.SetActive(false);
+                //continueButton.SetActive(false);
                 if (sentences[index].yesText != "")
                 {
                     option1Button.GetComponentInChildren<TextMeshProUGUI>().text = sentences[index].yesText;
