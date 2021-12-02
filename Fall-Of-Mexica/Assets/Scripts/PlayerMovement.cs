@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
              */
             else if (verticalInput > 0)
             {
+                minimapIcon.transform.eulerAngles = new Vector3(0, 0, -90);
                 sprite.flipY = true;
                 lastVertDir = true;
             }
@@ -87,10 +88,16 @@ public class PlayerMovement : MonoBehaviour
              * In all other situations,
              * Flip the sprite depending on the direction the player is inputting (accounts for diagonals). 
              */
-            else
+            else if (verticalInput < 0)
             {
+                minimapIcon.transform.eulerAngles = new Vector3(0, 0, 90);
                 sprite.flipX = lastDir;
                 sprite.flipY = lastVertDir;
+            }
+
+            else if(verticalInput ==0)
+            {
+                minimapIcon.transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
 
