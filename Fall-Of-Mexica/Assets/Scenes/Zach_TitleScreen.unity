@@ -343,7 +343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &137558516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3095,8 +3095,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Altman, Ida, S. L. Cline, and Juan Javier Pescador. The Early History
-    of Greater Mexico. Upper\r\n\tSaddle River, NJ: Prentice Hall, 2003.\r\n\tBurkholder,
+  m_text: "alonso. Huitzilopochtli . October 18, 2019. ThoughtCo. . \r\n\thttps://www.thoughtco.com/huitzilopochtli-aztec-god-of-the-sun-171229. 
+    \n\nAltman, Ida, S. L. Cline, and Juan Javier Pescador. The Early History of
+    Greater Mexico. Upper\r\n\tSaddle River, NJ: Prentice Hall, 2003.\r\n\tBurkholder,
     Mark A., and Lyman L. Johnson. Colonial Latin America. New York:\r\n\tOxford
     University Press, 2019.\r\n\r\nBrian, Amber, Bradley Benton, and Pablo Garc\xEDa
     Loaeza, eds. \u201CIntroduction.\u201D In The Native \r\n\tConquistador: Alva
@@ -3106,9 +3107,10 @@ MonoBehaviour:
     the Ancient \r\n\tNahual/Aztec Capital of Mexico. September 24, 2013. World History
     Encyclopedia. \t\n\thttps://www.worldhistory.org/image/1439/temple-mayor-tenochtitlan/. 
     \n\nCoe, Michael D. \u201CTHE CHINAMPAS OF MEXICO.\u201D Scientific American
-    211, no. 1 (1964): 90\u201399. \n\thttp://www.jstor.org/stable/24931564.\n\nEarley,
-    Caitlin C. \u201CThe Mesoamerican Ballgame .\u201D Metmuseum.org, June 2017.
-    Accessed \r\n\tOctober 9, 2021. https://www.metmuseum.org/toah/hd/mball/hd_mball.htm. 
+    211, no. 1 (1964): 90\u201399. \n\thttp://www.jstor.org/stable/24931564.\n\nDeBold,
+    Don. Quetzalc\xF3atl Sculpture. April 18, 2009. Atlas Obscura. \r\n\thttps://www.atlasobscura.com/places/quetzalcoatl-sculpture-park-god. 
+    \n\nEarley, Caitlin C. \u201CThe Mesoamerican Ballgame .\u201D Metmuseum.org,
+    June 2017. Accessed \r\n\tOctober 9, 2021. https://www.metmuseum.org/toah/hd/mball/hd_mball.htm. 
     \r\n\r\nHamann, Byron, and Liza Bakewell. \u201CLienzo De Tlaxcala .\u201D Mesolore.
     Brown University.  \r\n\tAccessed October 8, 2021. http://mesolore.org/viewer/view/2/Lienzo-de-Tlaxcala.
     \r\n\r\nmarkhal. A Painting Depicting the Ancient Nahual Ballgame, Ullamaliztli.
@@ -3143,8 +3145,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 7.5
+  m_fontSizeBase: 7.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3258,11 +3260,16 @@ MonoBehaviour:
     of the Mexica Empire. Boston, MA: Bedford/St. Martin's, Macmillan Learning, 2018.
     \r\n\r \nSmith, Michael E. \u201CLife in the Provinces of the Aztec Empire .\u201D
     Scientific American 277, no. 3, \r\n\tSeptember 1997. https://www.yumpu.com/en/document/view/25581114/life-in-the-provinces-\n\tof-the-aztec-empire-scientific-american-digital.
-    \r\n\nYoung, Nathaniel. \u201CAztec Human Sacrifice: Primitive Fanaticism or
-    Genius of Empire? | \r\n\tNathaniel Young '15.\u201D Aztec Human Sacrifice: Primitive
-    Fanaticism or Genius of Empire? | \n\tNathaniel Young '15 | Knight Writing Institute
-    Cornell \n\tArts & Sciences. Knight Writing Institute Cornell Arts & Sciences,
-    2015. \n\thttps://knight.as.cornell.edu/aztec-human-sacrifice-primitive-fanaticism-\n\tor-genius-empire-nathaniel-young-15. 
+    \r\n\nThe Aztec God Tezcatlipoca. Old World Gods . Accessed December 3, 2021.
+    \r\n\thttps://oldworldgods.com/aztecs/aztec-god-tezcatlipoca/.  \r\n\r\nThe Aztec
+    Goddess Xochiquetzal. Old World Gods. Accessed December 3, 2021. \r\n\thttps://oldworldgods.com/aztecs/aztec-goddess-xochiquetzal/. 
+    \r\n\n\u201CWater Deity (Chalchiuhtlicue) | 15th\u2013Early 16th Century.\u201D
+    Metmuseum.org. The Metropolitan \r\n\tMuseum of Art . Accessed December 3, 2021.
+    https://www.metmuseum.org/art/collection/search/307651.   \n\nYoung, Nathaniel.
+    \u201CAztec Human Sacrifice: Primitive Fanaticism or Genius of Empire? | \r\n\tNathaniel
+    Young '15.\u201D Aztec Human Sacrifice: Primitive Fanaticism or Genius of Empire?
+    | \n\tNathaniel Young '15 | Knight Writing Institute Cornell \n\tArts & Sciences.
+    Knight Writing Institute Cornell Arts & Sciences, 2015. \n\thttps://knight.as.cornell.edu/aztec-human-sacrifice-primitive-fanaticism-\n\tor-genius-empire-nathaniel-young-15. 
     \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 486458cbd2d865f4fb4a22a19c4db172, type: 2}
@@ -3290,8 +3297,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 7.5
+  m_fontSizeBase: 7.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
