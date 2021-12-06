@@ -42,12 +42,20 @@ public class CutsceneDialogue : MonoBehaviour
     public float typingSpeed;
     public GameObject continueButton;
 
+    //REFERENCE TO CUTSCENE BGs//
+    public Sprite cutsceneBG2;
+    public Sprite cutsceneBG3;
+    public Sprite cutsceneBG4;
+    public GameObject curCutsceneBG;
+    private SpriteRenderer curCutsceneBGSprite;
+
     // Start is called before the first frame update
     void Start()
     {
         npcNameText.text = npcName;
         sfxManager = GameObject.Find("SFXManager");
         dialogue = sfxManager.GetComponent<SFXManager>().dialouge;
+        curCutsceneBGSprite = curCutsceneBG.GetComponent<SpriteRenderer>(); 
         StartCoroutine(Type());
     }
 
@@ -81,7 +89,7 @@ public class CutsceneDialogue : MonoBehaviour
     // Goes onto the next sentence.
     public void NextSentence(bool yes)
     {
-        Debug.Log("awET");
+        Debug.Log(index);
         continueButton.SetActive(false);
         if (index < sentences.Length - 1)
         {
@@ -91,6 +99,20 @@ public class CutsceneDialogue : MonoBehaviour
             if (yes)
             {
                 index = sentences[index].yes;
+                if(index == 4)
+                {
+                    curCutsceneBGSprite.sprite = cutsceneBG2;
+                }
+
+                else if(index == 6)
+                {
+                    curCutsceneBGSprite.sprite = cutsceneBG3;
+                }
+
+                else if (index == 10)
+                {
+                    curCutsceneBGSprite.sprite = cutsceneBG4;
+                }
             }
 
             //Update the name of the NPCName displayed depending on which NPC is talking
