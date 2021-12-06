@@ -972,8 +972,8 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 923772232}
   cutsceneBG2: {fileID: 21300000, guid: fc1b560cb92d514409675148b1d538bb, type: 3}
-  cutsceneBG3: {fileID: 21300000, guid: 9739e50a4ebc4894587d785014cbd3d0, type: 3}
-  cutsceneBG4: {fileID: 21300000, guid: 6c3a590c0b27c0d4486e09800705b650, type: 3}
+  cutsceneBG3: {fileID: 21300000, guid: 7d1cfafd509e008468c9e15c29893388, type: 3}
+  cutsceneBG4: {fileID: 21300000, guid: 54c973cb844f17843b0c3f8dc44c18be, type: 3}
   curCutsceneBG: {fileID: 264654043}
 --- !u!1 &1354166206
 GameObject:
