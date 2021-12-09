@@ -135,14 +135,6 @@ public class CutsceneDialogue : MonoBehaviour
     IEnumerator loadSceneDelay()
     {
         yield return new WaitForSeconds(3.0f);
-
-        ////UNCOMMENT THIS LATER, AFTER THE FINAL CUTSCENE SCENE IS DONE!
-        //if (SceneManager.GetActiveScene().name == "FinalCutscene")
-        //{
-        //    SceneManager.LoadScene(0);
-        //}
-
-        //Load the next scene in the build index after the cutscene scene 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(3);
     }
 }

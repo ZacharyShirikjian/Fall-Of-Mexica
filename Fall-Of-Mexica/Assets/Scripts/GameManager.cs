@@ -31,7 +31,12 @@ public class GameManager : MonoBehaviour
 
     //VARIABLES//
     public bool canOpenMap = true;
-    public bool paused = false; 
+    public bool paused = false;
+
+    private AudioClip pickupSFX;
+    private AudioClip interactSFX; 
+    public AudioSource audioSource;
+    private GameObject sfxManager;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +64,9 @@ public class GameManager : MonoBehaviour
         interactPrompt.SetActive(false);
         currentObjectiveUI = GameObject.Find("CurrentObjective");
         currentObjectiveText = currentObjectiveUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        sfxManager = GameObject.Find("SFXManager");
+        pickupSFX = sfxManager.GetComponent<SFXManager>().pickupSFX;
+        interactSFX = sfxManager.GetComponent<SFXManager>().interactSFX;
         UpdateCurrentObjective("");
     }
 
@@ -134,6 +142,7 @@ public class GameManager : MonoBehaviour
         {
             interactPrompt.SetActive(true);
             interactPromptText.SetText(prompt);
+            audioSource.PlayOneShot(interactSFX);
         }
 
         else if (player.GetComponentInChildren<PlayerInteract>().canInteract == false)
@@ -162,7 +171,8 @@ public class GameManager : MonoBehaviour
         numOfMaize++;
         Debug.Log(numOfMaize);
         maizeCounter.SetText(numOfMaize.ToString());
-        if(numOfMaize >= 7)
+        audioSource.PlayOneShot(pickupSFX);
+        if (numOfMaize >= 7)
         {
             currentObjectiveText.SetText("Bring Maize to Templo Mayor");
         }

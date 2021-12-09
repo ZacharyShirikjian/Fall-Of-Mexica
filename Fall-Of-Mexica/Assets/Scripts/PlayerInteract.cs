@@ -16,8 +16,6 @@ public class PlayerInteract : MonoBehaviour
 
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
-
-
     //Reference to the parent of the player 
     private PlayerMovement PlayerMoveRef; 
 
@@ -36,6 +34,8 @@ public class PlayerInteract : MonoBehaviour
     public bool canInteract; //If the player can interact with something, this gets set to true
     public bool holdingObject = false; //If the player is holding a pickup, set this to true 
     public bool talking = false; //If the player is talking with NPC, this gets set to true 
+
+
 
     void Start()
     {
@@ -79,8 +79,6 @@ public class PlayerInteract : MonoBehaviour
             canInteract = false; 
             talking = true; 
             PlayerMoveRef.canMove = false; 
-            //Open up a dialogue box that shows the name of the signpost head & a brief description of what that symbol means 
-            //eg Eagle - This symbolizes the founding of Tenochtitlan, where it has been said that an eagle was perched on top of a cactus, eating a snake near Lake Texcoco.
         }
 
     }

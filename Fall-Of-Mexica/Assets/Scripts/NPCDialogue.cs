@@ -90,12 +90,6 @@ public class NPCDialogue : MonoBehaviour
         {
             DialogueBox.SetActive(true);
         }
-        //If the player presses space, display all of the text for that particular sentence. 
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    textDisplay.text = sentences[index].line;
-        //    StopAllCoroutines();
-        //}
 
         // This makes sure that the user cannot spam the Continue (>>>) button.
         if (textDisplay.text == sentences[index].line)
@@ -159,22 +153,6 @@ public class NPCDialogue : MonoBehaviour
                 index = sentences[index].no;
                 Debug.Log(index);
             }
-
-            ////If there is an answer and the player clicks a button,
-            //if (sentences[index].answer == true)
-            //{
-            //    //If the player selects the correct option, 
-            //    if (sentences[index].correctAnswer == true)
-            //    {
-
-            //    }
-
-            //    //If the player selects the incorrect option, 
-            //    else if (sentences[index].correctAnswer == false)
-            //    {
-
-            //    }
-            //}
             textDisplay.text = "";
             StartCoroutine(Type());
         }

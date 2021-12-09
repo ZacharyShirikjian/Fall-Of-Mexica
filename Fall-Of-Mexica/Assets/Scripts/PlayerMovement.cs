@@ -18,20 +18,17 @@ public class PlayerMovement : MonoBehaviour
     //REFERENCES//
     private SpriteRenderer sprite; //reference to the player's sprite 
     public GameObject minimapIcon; //reference to the minimap icon 
-    //private Rigidbody2D rb2d; //reference to the player's rigidbody 
 
     // Start is called before the first frame update
     void Start()
     {
         sprite = this.gameObject.GetComponent<SpriteRenderer>();
-        //rb2d = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMove();
-        //PlayerInteract();
     }
 
    /*
@@ -103,16 +100,4 @@ public class PlayerMovement : MonoBehaviour
 
        
     }
-
-    //void PlayerInteract()
-    //{
-    //    //For when player is talking to NPCs 
-    //    if(canInteract == true && Input.GetKeyDown(KeyCode.X))
-    //    {
-    //        Debug.Log("Player is talking to an NPC");
-    //        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-    //        talking = true; 
-    //        //Freeze player movement when they are interacting with something 
-    //    }
-    //}
 }
