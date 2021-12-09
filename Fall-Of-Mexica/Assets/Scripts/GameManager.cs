@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI currentObjectiveText;
 
     public GameObject option1Button;
-    public GameObject option2Button; 
+    public GameObject option2Button;
+    public GameObject signpostContinueButton;
     public GameObject continueButton;
     public GameObject DialogueBox;
     public TextMeshProUGUI npcNameText;
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
         fullMap.SetActive(false);
         option1Button.SetActive(false);
         option2Button.SetActive(false);
+        signpostContinueButton.SetActive(false);
         continueButton.SetActive(false);
         DialogueBox.SetActive(false);
         dialogueText = DialogueBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();

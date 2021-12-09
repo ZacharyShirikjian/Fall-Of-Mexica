@@ -79,26 +79,6 @@ public class SignpostDialogue : MonoBehaviour
     public void NextSentence(bool yes)
     {
         continueButton.SetActive(false);
-        if (index < sentences.Length - 1)
-        {
-            //index++;
-
-            //If the player clicks the continue button, continue to the next sentence
-            if (yes)
-            {
-                index = sentences[index].yes;
-            }
-
-            //Update the name of the NPCName displayed depending on which NPC is talking
-            //Which can be adjusted under the "NPCName" property of a Sentence object 
-            signpostNameText.SetText(sentences[index].signpostName);
-            textDisplay.text = "";
-            StartCoroutine(Type());
-        }
-
-        //End the Conversation
-        else
-        {
             textDisplay.text = "";
             DialogueBox.SetActive(false);
             player.GetComponentInChildren<PlayerInteract>().canInteract = true;
@@ -108,7 +88,5 @@ public class SignpostDialogue : MonoBehaviour
             StopAllCoroutines();
             player.GetComponent<PlayerMovement>().canMove = true;
             this.enabled = false;
-        }
-        continueButton.SetActive(false);
     }
 }

@@ -13,6 +13,7 @@ public class PlayerInteract : MonoBehaviour
     public NPC_Bridge object1Button;
     public NPC_Bridge2 object2Button;
     public NPC_Bridge_Continue continueButton;
+    public SignpostBridge signpostButton;
 
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
@@ -113,8 +114,9 @@ public class PlayerInteract : MonoBehaviour
         else if(other.CompareTag("Signpost"))
         {
             currentSignpost = other.gameObject;
-            signpostScript = currentSignpost.GetComponent<SignpostDialogue>();
+            //signpostScript = currentSignpost.GetComponent<SignpostDialogue>();
             canInteract = true;
+            signpostButton.signpostRef = currentSignpost.GetComponent<SignpostDialogue>();
             gm.InteractPrompt("Read");
         }
     }
