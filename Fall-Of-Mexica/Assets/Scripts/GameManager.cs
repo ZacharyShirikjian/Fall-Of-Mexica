@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
@@ -158,11 +159,15 @@ public class GameManager : MonoBehaviour
         {
             currentObjectiveText.SetText("Talk to Townspeople");
         }
+        
+        else if (currentObjective == "NextScene")
+        {
+            SceneManager.LoadScene(2);
+        }
 
         else
         {
             currentObjectiveText.SetText(currentObjective);
-
         }
     }
 
