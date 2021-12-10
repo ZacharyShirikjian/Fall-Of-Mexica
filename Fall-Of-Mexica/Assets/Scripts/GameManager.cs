@@ -33,7 +33,8 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI maizeCounter; 
     private int numOfMaize; 
 
-    private GameObject mapPrompts; 
+    private GameObject mapPrompts;
+    private TextMeshProUGUI mapPromptsText; 
     public GameObject miniMap; //reference to Minimap GameObject 
     public GameObject fullMap; //reference to the image of the full Tenochtitlan map 
 
@@ -53,6 +54,8 @@ public class GameManager : MonoBehaviour
         PauseMenu.SetActive(false);
         player = GameObject.FindWithTag("Player");
         mapPrompts = GameObject.Find("MapPrompts");
+        mapPromptsText = mapPrompts.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        mapPromptsText.SetText("Map");
         pickUpIcon = GameObject.Find("PickupIcon");
         pickUpIcon.SetActive(false);
         maizeCounter = GameObject.Find("MaizeCounter").GetComponent<TextMeshProUGUI>();
@@ -107,16 +110,19 @@ public class GameManager : MonoBehaviour
 
             miniMap.SetActive(false);
             fullMap.SetActive(true);
-            mapPrompts.SetActive(false);
+            mapPromptsText.SetText("Close Map");
+            //mapPrompts.SetActive(false);
             player.GetComponent<PlayerMovement>().canMove = false; 
-            canOpenMap = false; 
+            canOpenMap = false;
+            mapPromptsText.SetText("Close Map");
         }
 
-         //If player presses F again after the map is already opened, 
+        //If player presses F again after the map is already opened, 
         //Close the map 
         else if(paused == false && player.GetComponentInChildren<PlayerInteract>().talking == false && canOpenMap == false && Input.GetKeyDown(KeyCode.F))
         {
             fullMap.SetActive(false);
+            mapPromptsText.SetText("Map");
             mapPrompts.SetActive(true);
             miniMap.SetActive(true);
             player.GetComponent<PlayerMovement>().canMove = true;
