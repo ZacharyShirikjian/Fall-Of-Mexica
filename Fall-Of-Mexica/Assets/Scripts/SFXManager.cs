@@ -9,11 +9,13 @@ public class SFXManager : MonoBehaviour
     public AudioClip buttonHover;
     public AudioClip dialouge;
     public AudioClip pickupSFX;
-    public AudioClip interactSFX; 
-
+    public AudioClip interactSFX;
+    private AudioSource thisSource;
     // Start is called before the first frame update
     void Start()
     {
+        thisSource = GetComponent<AudioSource>();
+        thisSource.volume = Settings.volume;
         
     }
 
