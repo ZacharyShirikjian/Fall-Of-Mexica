@@ -24,7 +24,6 @@ public class PauseFunctions : MonoBehaviour
     {
         optionsPanel.SetActive(false);
     }
-
     //This method gets called when clicking "QUIT" on the pause menu 
     public void ReturnToTitle()
     {

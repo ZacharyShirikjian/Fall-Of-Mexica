@@ -656,7 +656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &879159841
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1072,7 +1072,7 @@ MonoBehaviour:
       Wait, I need to talk to him for a second. '
     yes: 14
     npcName: Malintzin
-  - line: She turns to the man who was speaking and begins top talk to him in the
+  - line: She turns to the man who was speaking and begins to talk to him in the
       language you couldn't understand. Your attention begins to shift to the shining
       men behind them as they look around sneering and focus on the two in front
       who you can assume is their leader as he holds himself much differently than
@@ -1085,7 +1085,7 @@ MonoBehaviour:
     yes: 16
     npcName: Narrator
   - line: '"I''m sorry for being disrespectful, let me introduce myself properly.
-      I''m Hernando Cortes, delegate of Spain, at your service. '
+      I''m Hernando Cortes, delegate of Spain, at your service."'
     yes: 17
     npcName: 'Cortes '
   - line: Oh honorable Nahua people, where may I meet your leader, the great Montezuma
@@ -1400,8 +1400,8 @@ MonoBehaviour:
   buttonClick: {fileID: 8300000, guid: 031ed79312abcdd48b7c01b93dd82a03, type: 3}
   buttonHover: {fileID: 8300000, guid: f6f387cf5b483da46862e03ca310fbdf, type: 3}
   dialouge: {fileID: 8300000, guid: 474ced6396fade1428adad539da1eae2, type: 3}
-  pickupSFX: {fileID: 0}
-  interactSFX: {fileID: 0}
+  pickupSFX: {fileID: 8300000, guid: b1652ef2eb07d6049a6d8de99c41ed18, type: 3}
+  interactSFX: {fileID: 8300000, guid: 0f9057bc83eb5c34c81035997aa73bad, type: 3}
 --- !u!82 &1699055509
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1412,11 +1412,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: b1ac04922e2d39a4abacf71a6a012bf8, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

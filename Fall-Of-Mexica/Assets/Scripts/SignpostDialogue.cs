@@ -45,6 +45,7 @@ public class SignpostDialogue : MonoBehaviour
     {
         DialogueBox.SetActive(true); 
         signpostNameText.text = signpostName;
+        player = GameObject.Find("Player");
         StartCoroutine(Type());
     }
 
@@ -78,7 +79,7 @@ public class SignpostDialogue : MonoBehaviour
     // Goes onto the next sentence.
     public void NextSentence(bool yes)
     {
-        continueButton.SetActive(false);
+            continueButton.SetActive(false);
             textDisplay.text = "";
             DialogueBox.SetActive(false);
             player.GetComponentInChildren<PlayerInteract>().canInteract = true;

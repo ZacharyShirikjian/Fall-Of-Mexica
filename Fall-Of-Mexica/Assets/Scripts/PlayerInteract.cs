@@ -13,7 +13,6 @@ public class PlayerInteract : MonoBehaviour
     public NPC_Bridge object1Button;
     public NPC_Bridge2 object2Button;
     public NPC_Bridge_Continue continueButton;
-    public SignpostBridge signpostButton;
 
     private Rigidbody2D rb2d; //reference to the player's rigidbody 
     private GameManager gm; //reference to the GameManager
@@ -29,7 +28,9 @@ public class PlayerInteract : MonoBehaviour
 
     //Reference to the currentSignpost that the player is near 
     public GameObject currentSignpost = null;
-    public SignpostDialogue signpostScript = null; 
+    public SignpostBridge signpostButton;
+
+    //public SignpostDialogue signpostScript = null; 
 
     //OTEHR VARIABLES//
     public bool canInteract; //If the player can interact with something, this gets set to true
@@ -141,8 +142,8 @@ public class PlayerInteract : MonoBehaviour
 
             else if(other.gameObject == currentSignpost)
             {
-                currentSignpost = null; 
-                signpostScript = null;
+                currentSignpost = null;
+                signpostButton.signpostRef = null;
             }
         }
     }
