@@ -25,6 +25,11 @@ public class ObjectiveCheck : MonoBehaviour
         {
             col.isTrigger = true;
         }
+
+        else if (this.name == "TCheck" && gm.templeObjectiveCompleted == true)
+        {
+            col.isTrigger = true;
+        }
     }
 
 }

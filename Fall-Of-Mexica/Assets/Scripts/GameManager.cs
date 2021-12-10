@@ -15,12 +15,14 @@ public class GameManager : MonoBehaviour
 
     public GameObject maizeObjective;
     public GameObject templeObjective;
+    public GameObject courtObjective; 
     public GameObject villageObjective;
 
     private GameObject currentObjectiveUI;
     private TextMeshProUGUI currentObjectiveText;
     public bool villageObjectiveCompleted;
-    public bool maizeObjectiveCompleted; 
+    public bool maizeObjectiveCompleted;
+    public bool templeObjectiveCompleted;
 
     public GameObject option1Button;
     public GameObject option2Button;
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
     public AudioSource audioSource;
     private GameObject sfxManager;
 
+    private string sceneName; 
     // Start is called before the first frame update
     void Start()
     {
@@ -81,10 +84,21 @@ public class GameManager : MonoBehaviour
         interactSFX = sfxManager.GetComponent<SFXManager>().interactSFX;
         villageObjectiveCompleted = false;
         maizeObjectiveCompleted = false;
+        templeObjectiveCompleted = false;
         maizeObjective.SetActive(false);
         villageObjective.SetActive(false);
-        templeObjective.SetActive(false);
+        courtObjective.SetActive(false);
         UpdateCurrentObjective("");
+        sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "Zach_TestScene2")
+        {
+            templeObjective.SetActive(true);
+        }
+        else
+        {
+            templeObjective.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
@@ -196,8 +210,21 @@ public class GameManager : MonoBehaviour
             templeObjective.SetActive(true);
             maizeObjective.SetActive(false);
         }
+        else if(currentObjective == "Meet Montezuma at the Ullamaliztli Court")
+        {
+            templeObjective.SetActive(false);
+            courtObjective.SetActive(true);
+        }
 
         else if (currentObjective == "NextScene")
+        {
+            villageObjective.SetActive(false);
+            templeObjective.SetActive(false);
+            maizeObjective.SetActive(false);
+            SceneManager.LoadScene(2);
+        }
+
+        else if (currentObjective == "ReturnToTitle")
         {
             villageObjective.SetActive(false);
             templeObjective.SetActive(false);

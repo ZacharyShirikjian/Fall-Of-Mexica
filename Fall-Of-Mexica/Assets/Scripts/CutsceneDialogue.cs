@@ -49,13 +49,16 @@ public class CutsceneDialogue : MonoBehaviour
     public GameObject curCutsceneBG;
     private SpriteRenderer curCutsceneBGSprite;
 
+    public bool paused = false;
+    public GameObject PauseMenu;
     // Start is called before the first frame update
     void Start()
     {
         npcNameText.text = npcName;
         sfxManager = GameObject.Find("SFXManager");
         dialogue = sfxManager.GetComponent<SFXManager>().dialouge;
-        curCutsceneBGSprite = curCutsceneBG.GetComponent<SpriteRenderer>(); 
+        curCutsceneBGSprite = curCutsceneBG.GetComponent<SpriteRenderer>();
+        PauseMenu.SetActive(false); 
         StartCoroutine(Type());
     }
 
@@ -74,8 +77,31 @@ public class CutsceneDialogue : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && paused == false)
+        {
+            PauseGame();
+
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Escape) && paused == true)
+        {
+            UnPauseGame();
+        }
+    }
+    void PauseGame()
+    {
+        paused = true;
+        PauseMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
+    void UnPauseGame()
+    {
+        paused = false;
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
     // This prints out the sentences; adjustable typing speeds.
     IEnumerator Type()
     {
@@ -135,6 +161,6 @@ public class CutsceneDialogue : MonoBehaviour
     IEnumerator loadSceneDelay()
     {
         yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Zach_TestScene2");
     }
 }

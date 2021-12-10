@@ -175,6 +175,11 @@ public class NPCDialogue : MonoBehaviour
             {
                 gm.villageObjectiveCompleted = true; 
             }
+
+            else if(this.name == "TototlS2")
+            {
+                gm.templeObjectiveCompleted = true;
+            }
             StopAllCoroutines();
             index = 0;
             player.GetComponent<PlayerMovement>().canMove = true;
