@@ -8,6 +8,7 @@ public class SettingsSlider : MonoBehaviour
 {
     public Slider volume_S;
     public TMPro.TMP_Text volumeNum;
+    public AudioSource audioSource; 
 
     private void Awake()
     {
@@ -20,6 +21,8 @@ public class SettingsSlider : MonoBehaviour
         Settings.ChangeVolume((int)volume_S.value);
         volume_S.value = Settings.volume;
         volumeNum.text = volume_S.value.ToString();
+        audioSource.volume = ((float) volume_S.value / 100);
+        Debug.Log(audioSource.volume);
     }
 }
 

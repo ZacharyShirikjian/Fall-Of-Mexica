@@ -15,13 +15,5 @@ public class SFXManager : MonoBehaviour
     void Start()
     {
         thisSource = GetComponent<AudioSource>();
-        thisSource.volume = Settings.volume;
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

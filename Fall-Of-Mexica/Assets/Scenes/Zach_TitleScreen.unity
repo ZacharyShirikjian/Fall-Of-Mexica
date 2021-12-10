@@ -290,7 +290,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1518298237}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1741,7 +1741,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598917425}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3823,7 +3823,10 @@ MonoBehaviour:
     Loaeza, eds. \u201CIntroduction.\u201D In The Native \r\n\tConquistador: Alva
     Ixtlilxochitl\u2019s Account of the Conquest of New Spain, 10:1\u201318. Penn
     State \n\tUniversity Press, 2015. Accessed October 8, 2021. http://www.jstor.org/stable/10.5325/j.ctv14gp927.7. 
-    \r\n\r\nCartwright, Mark. A Model Reconstruction of the Templo Mayor from Tenochtitlan,
+    \r\n\r\nCarrillo, Karen Juanita. Hern\xE1ndo Cort\xE9s, Spanish Conquistador
+    Who Conquered Mexico, with \r\n\tMoctezuma II, Last Aztec Emperor, 1519. HISTORY.com.
+    A&E Television Networks, LLC., May 20, 2021.\n  \thttps://www.history.com/news/hernan-cortes-conquered-aztec-empire.
+    \n\nCartwright, Mark. A Model Reconstruction of the Templo Mayor from Tenochtitlan,
     the Ancient \r\n\tNahual/Aztec Capital of Mexico. September 24, 2013. World History
     Encyclopedia. \t\n\thttps://www.worldhistory.org/image/1439/temple-mayor-tenochtitlan/. 
     \n\nCoe, Michael D. \u201CTHE CHINAMPAS OF MEXICO.\u201D Scientific American
@@ -3835,10 +3838,7 @@ MonoBehaviour:
     Brown University.  \r\n\tAccessed October 8, 2021. http://mesolore.org/viewer/view/2/Lienzo-de-Tlaxcala.
     \r\n\r\nmarkhal. A Painting Depicting the Ancient Nahual Ballgame, Ullamaliztli.
     . June 26, 2017. The \r\n\tUpsizers. https://theupsizers.wordpress.com/2017/07/06/entry-672-take-me-out-to-the-ullamaliztli-game/. 
-    \r\n\n\nPortilla Leo\u0301n Miguel, Jorge Klor de Alva Jose\u0301, Mari\u0301a
-    Garibay Kintana A\u0301ngel, Lysander Kemp, \r\n\tand Beltra\u0301n Alberto.
-    The Broken Spears: The AZTEC Account of the Conquest of Mexico. \r\n\tBoston:
-    Beacon Press, 1992.\r\n\r\n"
+    \r\n\n\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 486458cbd2d865f4fb4a22a19c4db172, type: 2}
   m_sharedMaterial: {fileID: 6753852209416550722, guid: 486458cbd2d865f4fb4a22a19c4db172, type: 2}
@@ -4047,14 +4047,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sahagu\u0301n Bernardino de. Florentine Codex: General History of the
-    Things of New Spain. Salt \r\n\tLake City, UT: University of Utah Press, 2012.\r\n\r\nSchroeder,
-    Susan, Stephanie Gail Wood, and Robert Stephen Haskett. Indian Women of Early
-    \r\n\tMexico. University of Oklahoma Press, 1997. \r\n\r\nSchwartz, Stuart B.,
-    and Tatiana Seijas. Victors and Vanquished: Spanish and Nahua Views of the \r\n\tFall
-    of the Mexica Empire. Boston, MA: Bedford/St. Martin's, Macmillan Learning, 2018.
-    \r\n\r \nSmith, Michael E. \u201CLife in the Provinces of the Aztec Empire .\u201D
-    Scientific American 277, no. 3, \r\n\tSeptember 1997. https://www.yumpu.com/en/document/view/25581114/life-in-the-provinces-\n\tof-the-aztec-empire-scientific-american-digital.
+  m_text: "Mursell, Ian. Image of a Mexica Priest from the Codex Tudela, Folio 76
+    . 2002. Aztec Pages at \r\n\tMexicolore. https://www.mexicolore.co.uk/aztecs/aztefacts/priests-and-their-matted-hair. 
+    \n\nPortilla Leo\u0301n Miguel, Jorge Klor de Alva Jose\u0301, Mari\u0301a Garibay
+    Kintana A\u0301ngel, Lysander Kemp, \r\n\tand Beltra\u0301n Alberto. The Broken
+    Spears: The AZTEC Account of the Conquest of Mexico. \r\n\tBoston: Beacon Press,
+    1992.\r\n\nSahagu\u0301n Bernardino de. Florentine Codex: General History of
+    the Things of New Spain. Salt \r\n\tLake City, UT: University of Utah Press,
+    2012.\r\n\r\nSchroeder, Susan, Stephanie Gail Wood, and Robert Stephen Haskett.
+    Indian Women of Early \r\n\tMexico. University of Oklahoma Press, 1997. \r\n\r\nSchwartz,
+    Stuart B., and Tatiana Seijas. Victors and Vanquished: Spanish and Nahua Views
+    of the \r\n\tFall of the Mexica Empire. Boston, MA: Bedford/St. Martin's, Macmillan
+    Learning, 2018. \r\n\r \nSmith, Michael E. \u201CLife in the Provinces of the
+    Aztec Empire .\u201D Scientific American 277, no. 3, \r\n\tSeptember 1997. https://www.yumpu.com/en/document/view/25581114/life-in-the-provinces-\n\tof-the-aztec-empire-scientific-american-digital.
     \r\n\nThe Aztec God Tezcatlipoca. Old World Gods . Accessed December 3, 2021.
     \r\n\thttps://oldworldgods.com/aztecs/aztec-god-tezcatlipoca/.  \r\n\r\nThe Aztec
     Goddess Xochiquetzal. Old World Gods. Accessed December 3, 2021. \r\n\thttps://oldworldgods.com/aztecs/aztec-goddess-xochiquetzal/. 
