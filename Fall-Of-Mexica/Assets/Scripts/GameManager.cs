@@ -11,10 +11,16 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI interactPromptText;
     public GameObject PauseMenu;
     private GameObject player;
-    public GameObject pickUpIcon; 
+    public GameObject pickUpIcon;
+
+    public GameObject maizeObjective;
+    public GameObject templeObjective;
+    public GameObject villageObjective;
 
     private GameObject currentObjectiveUI;
     private TextMeshProUGUI currentObjectiveText;
+    public bool villageObjectiveCompleted;
+    public bool maizeObjectiveCompleted; 
 
     public GameObject option1Button;
     public GameObject option2Button;
@@ -70,6 +76,11 @@ public class GameManager : MonoBehaviour
         sfxManager = GameObject.Find("SFXManager");
         pickupSFX = sfxManager.GetComponent<SFXManager>().pickupSFX;
         interactSFX = sfxManager.GetComponent<SFXManager>().interactSFX;
+        villageObjectiveCompleted = false;
+        maizeObjectiveCompleted = false;
+        maizeObjective.SetActive(false);
+        villageObjective.SetActive(false);
+        templeObjective.SetActive(false);
         UpdateCurrentObjective("");
     }
 
@@ -160,10 +171,31 @@ public class GameManager : MonoBehaviour
         if(currentObjective == "")
         {
             currentObjectiveText.SetText("Talk to Townspeople");
+            villageObjective.SetActive(true);
+            templeObjective.SetActive(false);
+            maizeObjective.SetActive(false);
+        }
+
+        else if(currentObjective == "Pickup Maize from the Fields")
+        {
+            currentObjectiveText.SetText("Pickup Maize from the Fields");
+            villageObjective.SetActive(false);
+            templeObjective.SetActive(false);
+            maizeObjective.SetActive(true);
         }
         
+        else if(currentObjective == "Bring Maize to Templo Mayor")
+        {
+            villageObjective.SetActive(false);
+            templeObjective.SetActive(true);
+            maizeObjective.SetActive(false);
+        }
+
         else if (currentObjective == "NextScene")
         {
+            villageObjective.SetActive(false);
+            templeObjective.SetActive(false);
+            maizeObjective.SetActive(false);
             SceneManager.LoadScene(2);
         }
 
@@ -179,8 +211,10 @@ public class GameManager : MonoBehaviour
         Debug.Log(numOfMaize);
         maizeCounter.SetText(numOfMaize.ToString());
         audioSource.PlayOneShot(pickupSFX);
-        if (numOfMaize >= 7)
+        if (numOfMaize >= 5)
         {
+            maizeObjectiveCompleted = true;
+            maizeObjective.SetActive(false);
             currentObjectiveText.SetText("Bring Maize to Templo Mayor");
         }
     }

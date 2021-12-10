@@ -170,6 +170,11 @@ public class NPCDialogue : MonoBehaviour
             {
                 gm.UpdateCurrentObjective(objective);
             }
+
+            if(this.name == "Anci" || this.name == "Quauhtli")
+            {
+                gm.villageObjectiveCompleted = true; 
+            }
             StopAllCoroutines();
             index = 0;
             player.GetComponent<PlayerMovement>().canMove = true;

@@ -68,7 +68,6 @@ public class PlayerInteract : MonoBehaviour
             holdingObject = true;
             Destroy(currentPickUp.gameObject);
             Debug.Log("Player has picked up maize");
-            gm.UpdateCurrentObjective("Bring the Maize to the Temple"); 
             gm.pickUpIcon.SetActive(true); //tweak this later? 
             gm.IncreaseMaizeCounter();
         }
