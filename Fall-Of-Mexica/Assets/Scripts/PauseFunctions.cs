@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PauseFunctions : MonoBehaviour
 {
-
+    public GameObject optionsPanel;
     //This method gets called when clicking "RESTART" on the pause menu 
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        optionsPanel.SetActive(false); 
     }
 
     //This method gets called when clicking "OPTIONS" on the pause menu (will be implemented later) 
     public void OpenOptionsMenu()
     {
-        //Set Active OptionsPanel w/ options to increase/decrease volume, 
+        optionsPanel.SetActive(true);
     }
     //This method gets called when clicking "QUIT" on the pause menu 
     public void ReturnToTitle()

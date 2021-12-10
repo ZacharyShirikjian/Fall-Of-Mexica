@@ -112,12 +112,12 @@ public class GameManager : MonoBehaviour
             canOpenMap = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.P) && paused == false)
+        if(Input.GetKeyDown(KeyCode.Escape) && paused == false)
         {
             PauseGame();
         }
 
-        else if(Input.GetKeyDown(KeyCode.P) && paused == true)
+        else if(Input.GetKeyDown(KeyCode.Escape) && paused == true)
         {
             UnPauseGame(); 
         }
