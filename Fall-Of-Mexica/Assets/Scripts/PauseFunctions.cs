@@ -18,6 +18,13 @@ public class PauseFunctions : MonoBehaviour
     {
         optionsPanel.SetActive(true);
     }
+
+    //This method gets called when clicking "OPTIONS" on the pause menu (will be implemented later) 
+    public void CloseOptionsMenu()
+    {
+        optionsPanel.SetActive(false);
+    }
+
     //This method gets called when clicking "QUIT" on the pause menu 
     public void ReturnToTitle()
     {
