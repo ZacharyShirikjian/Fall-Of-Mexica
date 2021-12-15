@@ -104,6 +104,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenu.activeSelf == false)
+        {
+            paused = false;
+        }
 
         if(player.GetComponentInChildren<PlayerInteract>().talking == true)
         {

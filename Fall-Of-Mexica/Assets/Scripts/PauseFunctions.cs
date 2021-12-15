@@ -7,6 +7,12 @@ public class PauseFunctions : MonoBehaviour
 {
     public GameObject optionsPanel;
     //This method gets called when clicking "RESTART" on the pause menu 
+
+    public void UnPauseGame()
+    {
+        Time.timeScale = 1f;
+        this.gameObject.SetActive(false);
+    }    
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
