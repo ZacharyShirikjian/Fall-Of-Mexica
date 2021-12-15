@@ -152,15 +152,9 @@ public class CutsceneDialogue : MonoBehaviour
         else
         {
             textDisplay.text = "";
-            StartCoroutine(loadSceneDelay());
             DialogueBox.SetActive(false);
+            SceneManager.LoadScene(3);
         }
     }
     
-    //After 3 seconds, load the next gameplay scene after the cutscene scene 
-    IEnumerator loadSceneDelay()
-    {
-        yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene("Zach_TestScene2");
-    }
 }

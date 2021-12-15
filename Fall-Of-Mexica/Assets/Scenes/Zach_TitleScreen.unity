@@ -735,11 +735,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    Dr. Joseph Watchel
-
-    Professor Jon Amakawa '
+  m_text: "\nDr. Joseph Watchel\nProfessor Jon Amakawa \n\nPLAYTESTERS\nAlex Maggio\nAlbert
+    Thompson"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 486458cbd2d865f4fb4a22a19c4db172, type: 2}
   m_sharedMaterial: {fileID: 6753852209416550722, guid: 486458cbd2d865f4fb4a22a19c4db172, type: 2}

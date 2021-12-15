@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalInput; //player input in horizontal direction 
     private float verticalInput; //player input in vertical direction
     private float playerSpeed = 5f; //speed of the player 
-    private bool lastDir; //the last horizontal direction the player was facing in, left = false, right = true
-    private bool lastVertDir; //the last vertical direction the player was facing in, down = false, up = true
     public bool canMove = true;
     public bool isMoving = false;
 
@@ -87,8 +85,9 @@ public class PlayerMovement : MonoBehaviour
             if (horizontalInput < 0)
             {
                 minimapIcon.GetComponent<SpriteRenderer>().flipX = true;
-                lastDir = false;
                 playerAnim.SetBool("Moving", true);
+                playerAnim.SetBool("FacingUp", false);
+                playerAnim.SetBool("FacingDown", false);
                 playerAnim.SetBool("FacingRight", false);
             }
 
@@ -99,8 +98,9 @@ public class PlayerMovement : MonoBehaviour
             else if (horizontalInput > 0)
             {
                 minimapIcon.GetComponent<SpriteRenderer>().flipX = false;
-                lastDir = true;
                 playerAnim.SetBool("Moving", true);
+                playerAnim.SetBool("FacingUp", false);
+                playerAnim.SetBool("FacingDown", false);
                 playerAnim.SetBool("FacingRight", true);
             }
 
@@ -112,7 +112,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log(verticalInput);
                 minimapIcon.transform.eulerAngles = new Vector3(0, 0, 90);
-                lastVertDir = true;
                 playerAnim.SetBool("Moving", true);
                 playerAnim.SetBool("FacingDown", false);
                 playerAnim.SetBool("FacingRight", false);
@@ -129,7 +128,6 @@ public class PlayerMovement : MonoBehaviour
                 minimapIcon.transform.eulerAngles = new Vector3(0, 0, -90);
                 playerAnim.SetBool("Moving", true);
                 playerAnim.SetBool("FacingDown", true);
-                playerAnim.SetBool("FacingRight", false);
                 playerAnim.SetBool("FacingUp", false);
             }
 
