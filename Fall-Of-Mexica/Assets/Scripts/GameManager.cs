@@ -229,7 +229,7 @@ public class GameManager : MonoBehaviour
             villageObjective.SetActive(false);
             templeObjective.SetActive(false);
             maizeObjective.SetActive(false);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(0);
         }
 
         else

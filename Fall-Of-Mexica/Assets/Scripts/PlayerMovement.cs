@@ -16,13 +16,13 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
 
     //REFERENCES//
-    private SpriteRenderer sprite; //reference to the player's sprite 
     public GameObject minimapIcon; //reference to the minimap icon 
+    private Animator playerAnim; //reference to Player's Animator 
 
     // Start is called before the first frame update
     void Start()
     {
-        sprite = this.gameObject.GetComponent<SpriteRenderer>();
+        playerAnim = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -55,8 +55,8 @@ public class PlayerMovement : MonoBehaviour
             if (horizontalInput < 0)
             {
                 minimapIcon.GetComponent<SpriteRenderer>().flipX = true;
-                sprite.flipX = false;
                 lastDir = false;
+                playerAnim.SetBool("FacingRight", false);
             }
 
             /*
@@ -66,8 +66,8 @@ public class PlayerMovement : MonoBehaviour
             else if (horizontalInput > 0)
             {
                 minimapIcon.GetComponent<SpriteRenderer>().flipX = false;
-                sprite.flipX = true;
                 lastDir = true;
+                playerAnim.SetBool("FacingRight", true);
             }
 
             /*
@@ -77,8 +77,12 @@ public class PlayerMovement : MonoBehaviour
             else if (verticalInput > 0)
             {
                 minimapIcon.transform.eulerAngles = new Vector3(0, 0, -90);
-                sprite.flipY = true;
                 lastVertDir = true;
+                playerAnim.SetBool("FacingDown", true);
+                playerAnim.SetBool("FacingRight", false);
+                playerAnim.SetBool("FacingUp", false);
+                playerAnim.SetBool("MovingVert", true); 
+
             }
 
             /*
@@ -88,13 +92,18 @@ public class PlayerMovement : MonoBehaviour
             else if (verticalInput < 0)
             {
                 minimapIcon.transform.eulerAngles = new Vector3(0, 0, 90);
-                sprite.flipX = lastDir;
-                sprite.flipY = lastVertDir;
+                playerAnim.SetBool("FacingDown", false);
+                playerAnim.SetBool("FacingRight", false);
+                playerAnim.SetBool("FacingUp", true);
+                playerAnim.SetBool("MovingVert", true);
             }
 
-            else if(verticalInput ==0)
+            else if(verticalInput == 0)
             {
                 minimapIcon.transform.eulerAngles = new Vector3(0, 0, 0);
+                playerAnim.SetBool("MovingVert", false);
+                playerAnim.SetBool("FacingDown", false);
+                playerAnim.SetBool("FacingUp", false);
             }
         }
 

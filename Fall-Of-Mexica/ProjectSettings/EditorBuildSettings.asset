@@ -5,24 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Zach_TitleScreen.unity
     guid: 04f3522499ac00e488a8c1c4214a9b25
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Zach_TestScene.unity
     guid: a9bbd595d2d120d46b1f37c70254750d
   - enabled: 1
     path: Assets/Scenes/Zach_Cutscene.unity
     guid: 4655a572c928644478a95c8d612af6fa
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Zach_TestScene2.unity
     guid: af22f8455deb88347a9d08d9e7abb6d8
